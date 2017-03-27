@@ -42,7 +42,7 @@
 
   if (!$('nav').hasClass('sections-nav')) {
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
+      if ($(this).scrollTop() > 20) {
         $('nav').addClass('fixed');
       } else {
         $('nav').removeClass('fixed');
