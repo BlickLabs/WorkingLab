@@ -19,11 +19,15 @@ nav
         width 116px
 
       .menu
-        justify-content flex-end
+        justify-content flex-start
+        margin-left 98px
 
   &.fixed,
   &.sections-nav
     background #326197
+
+    .menu
+      justify-content flex-end
 
   .menu-trigger,
   .mobile-logo-container
@@ -46,7 +50,6 @@ nav
 
   .menu
     width 100%
-    justify-content flex-start
     transition justify-content 0.3s
     display flex
     height 100%
@@ -103,6 +106,7 @@ nav
         right 0
 
       .menu
+        margin-left 0 !important
         display block
         margin-bottom 40px
         margin-top 30px
