@@ -1,0 +1,31 @@
+.homepage-hero
+  background-image url('../img/backgrounds/hero.jpg')
+  height calc(95vh - 72px)
+  min-height 400px
+
+  @media screen and (orientation: portrait)
+    @media screen and (min-height: 400px) and (min-width: 400px)
+      max-height 76vw
+
+.homepage-hero__layer
+  background rgba(black, 0.2)
+  height 100%
+
+.homepage-hero__inner
+  color white
+  text-align center
+  width 86%
+  max-width 610px
+
+  .site-button
+    margin-top remify(17)
+
+.homepage-hero__title
+  font-size remify(39)
+  font-weight normal
+  letter-spacing (-0.6)
+
+.homepage-hero__subtitle
+  display block
+  margin-top remify(72)
+  font-size remify(20)
