@@ -204,6 +204,67 @@
   width 100%
   position relative
 
+.homepage-testimonials
+  padding remify(56) 0 remify(103) 0
+  text-align center
+
+.homepage-testimonials__title
+  color #525876
+  font-size remify(19)
+  font-weight normal
+
+.homepage-testimonials__items
+  width 90%
+  center-block()
+  display flex
+  justify-content space-between
+  max-width 822px
+  flex-wrap wrap
+
+.homepage-testimonials__item-icon
+  background $blue
+  height remify(78)
+  width remify(81)
+  border-radius 3px
+  center-block()
+
+  img
+    width remify(32.5)
+
+.homepage-testimonials__item
+  margin-top remify(34)
+  flex-basis 48.65%
+
+.homepage-testimonials__item-title
+  color #3b7adb
+  font-size remify(18)
+
+.homepage-testimonials__item-content
+  simple-border('all', 1px, #e5e5e5)
+  margin-top remify(-35)
+  position relative
+  padding remify(69) remify(31) remify(17) remify(31)
+  z-index -1
+  min-height remify(212)
+
+.homepage-testimonials__item-text
+  font-size 14px
+  color #898989
+  line-height 1.36
+  margin 0
+  margin-top 12px
+
+@media screen and (max-width: 925px)
+  .homepage-testimonials__items
+    max-width 500px
+
+  .homepage-testimonials__item
+    flex-basis 100%
+
+  .homepage-testimonials__item-content
+    min-height initial
+    padding-bottom remify(32)
+
 @media screen and (max-width: 767px)
   .homepage-services__items
     max-width 400px
