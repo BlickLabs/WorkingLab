@@ -61,3 +61,52 @@
     center-block()
     margin-top remify(31)
     width remify(58)
+
+.homepage-free-day
+  background #f6f6f6
+  padding remify(19) 0
+
+.homepage-free-day__inner
+  center-block()
+  width 90%
+  max-width 822px
+  position relative
+  padding-left 156px
+
+.homepage-free-day__content
+  border-radius 3px
+  background white
+  max-width 278px
+  padding remify(48) remify(55) remify(44) remify(34)
+  position absolute
+  left 0
+  top 50%
+  transform translateY(-50%)
+
+  .site-button
+    font-size remify(13)
+
+.homepage-free-day__title
+  color #414563
+  font-size remify(29)
+  font-weight bold
+
+.homepage-free-day__text
+  color #414563
+  font-size remify(15)
+  line-height 1.47
+  margin-top remify(17)
+
+.homepage-free-day__cover
+  background-image url('../img/backgrounds/home.jpg')
+  max-width 666px
+  width 100%
+  height remify(475)
+
+@media screen and (max-width: 450px)
+  .homepage-free-day
+    padding 0
+
+  .homepage-free-day__inner
+    width 100%
+    padding-left 30%
