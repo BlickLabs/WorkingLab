@@ -1,0 +1,95 @@
+.prices__inner
+  text-align center
+
+  .site-button
+    margin-bottom remify(60)
+    font-size remify(13)
+    width remify(137)
+
+.prices__items
+  center-block()
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  align-items flex-start
+  margin-top remify(20)
+  max-width 776px
+  width 90%
+  margin-bottom remify(69)
+
+.prices__item
+  margin-top remify(50)
+  width 241px
+
+.prices__item-icon
+  background white
+  display flex
+  justify-content center
+  align-items center
+  height remify(66)
+  width remify(92)
+  center-block()
+  text-align center
+  simple-border('all', 1px, #e5e5e5)
+
+  img
+    width remify(45)
+
+.prices__item-header
+  simple-border('all', 1px, #e5e5e5)
+  text-align center
+  margin-top remify(-33)
+  padding-bottom:remify(19)
+  padding-top remify(53)
+  z-index -1
+  position relative
+
+.prices__item-title
+  color #0d82eb
+  text-transform uppercase
+  font-size remify(16)
+  letter-spacing remify(0.6)
+
+.prices__item-price
+  display block
+  color #525876
+  margin-top remify(15)
+  font-size remify(17)
+  letter-spacing remify(-0.3)
+
+.prices__item-content
+  simple-border('notop', 1px, #e5e5e5)
+  margin 0
+  padding remify(23) remify(21) remify(31) remify(25)
+
+.prices__item-characteristic
+  list-style none
+  text-align left
+
+  &:not(:first-child)
+    margin-top remify(23)
+
+  span
+    display inline-block
+    vertical-align top
+    width 'calc(100% - %s)' % remify(20)
+    line-height 1.33
+    color #39393a
+    font-size remify(15)
+
+  &::before
+    content '●'
+    color $blue
+    font-size remify(8)
+    display inline-block
+    margin-right remify(13)
+    vertical-align top
+    padding-top remify(3)
+
+@media screen and (max-width: 850px)
+  .prices__items
+    max-width 600px
+    justify-content center
+
+  .prices__item
+    flex-basis 100%
