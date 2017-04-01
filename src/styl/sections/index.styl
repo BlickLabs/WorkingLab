@@ -148,6 +148,30 @@
   background-image url('../img/backgrounds/home-newsletter.jpg')
   padding remify(50) 0 remify(38) 0
 
+  .custom-loader
+    margin-top remify(30)
+
+    div div
+      background white
+
+  .error,
+  .success
+    color white
+
+  .error .fa
+    color $errorColor
+
+  .success .fa
+    color $successColor
+
+  label.error
+    padding-top 0.6em
+
+    &::before
+      color $errorColor
+      content '●'
+      padding-right 0.4em
+
 .homepage-newsletter__quote,
 .homepage_newsletter__form
   width 90%
