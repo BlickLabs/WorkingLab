@@ -2,7 +2,7 @@ var src = './src',
   dist = './dist',
   build = './build',
   bower = './bower_components',
-  package = 'workinglab';
+  package = 'workingch';
 
 module.exports = {
   paths: {
@@ -53,7 +53,7 @@ module.exports = {
   },
   etc: {
     domain: '',
-    projectName: 'WorkingLab',
+    projectName: 'Working Chapultepec',
     formattedName: package
   }
 };
