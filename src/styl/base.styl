@@ -95,23 +95,9 @@ textarea
   resize none
 // END FORMS //
 
-.site-input
-  display block
-  width 100%
+// MATERIAL STYLES //
 
-.inputs-row
-  display flex
-  justify-content space-between
-  flex-wrap wrap
-
-  .input-wrapper
-    flex-basis 48.33%
-
-.input-wrapper
-  text-align left
-  width 100%
-
-.input-wrapper--material
+.material-div
   padding remify(18) 0 0 0
   position relative
 
@@ -134,33 +120,50 @@ textarea
     transform scaleX(1)
 
   &.is-active, &.is-completed
-    .input-label--material
+    .material-label
       padding-left 0
 
-  &.is-active .input-label--material
+  &.is-active .material-label
     color $blue
 
-  &.is-completed .input-label--material
+  &.is-completed .material-label
     transform translateY(0)
 
-.input-label
-  display block
-
-.input-label--material
+.material-label
   transform translateY(25px)
   color #525876
   transition all 0.3s
   padding-left 1.1em
 
-.site-input
-  width 100%
-  outline none
-
-.site-input--material
+.material-input
   border none
   position relative
   background transparent
   padding 0.8em 0
+// END MATERIAL STYLES
+
+.site-input
+  display block
+  width 100%
+
+.inputs-row
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+
+  .input-wrapper
+    flex-basis 48.33%
+
+.input-wrapper
+  text-align left
+  width 100%
+
+.input-label
+  display block
+
+.site-input
+  width 100%
+  outline none
 
 .site-button
   color white
