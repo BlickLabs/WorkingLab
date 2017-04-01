@@ -8,5 +8,25 @@ Contacto
 {% endblock %}
 
 {% block content %}
-
+<h1 class="section-title main-title">Contacto</h1>
+<form id="contact-form" class="contact-form" action="." method="post">
+  <div class="inputs-row">
+    <div class="input-wrapper">
+      <input class="site-input" type="text" name="name" required placeholder="Nombre(s)">
+    </div>
+    <div class="input-wrapper">
+      <input class="site-input" type="text" name="surname" required placeholder="Apellidos">
+    </div>
+  </div>
+  <div class="inputs-row">
+    <div class="input-wrapper">
+      <input class="site-input" type="email" name="email" required placeholder="Correo electrónico">
+    </div>
+    <div class="input-wrapper">
+      <input class="site-input" type="tel" name="phone" placeholder="Teléfono (opcional)">
+    </div>
+  </div>
+  <textarea name="message" class="site-input" placeholder="Mensaje" required></textarea>
+  <button class="site-button" type="submit" name="submit">Enviar</button>
+</form>
 {% endblock %}
