@@ -12,21 +12,28 @@ Contacto
 <form id="contact-form" class="contact-form" action="." method="post">
   <div class="inputs-row">
     <div class="input-wrapper">
-      <input class="site-input" type="text" name="name" required placeholder="Nombre(s)">
+      <label class="input-label" for="contact-form-name">Nombre(s)</label>
+      <input id="contact-form-name" class="site-input" type="text" name="name" required>
     </div>
     <div class="input-wrapper">
-      <input class="site-input" type="text" name="surname" required placeholder="Apellidos">
+      <label class="input-label" for="contact-form-surname">Apellidos</label>
+      <input id="contact-form-surname" class="site-input" type="text" name="surname" required>
     </div>
   </div>
   <div class="inputs-row">
     <div class="input-wrapper">
-      <input class="site-input" type="email" name="email" required placeholder="Correo electrónico">
+      <label class="input-label" for="contact-form-email">Correo electrónico</label>
+      <input id="contact-form-email" class="site-input" type="email" name="email" required>
     </div>
     <div class="input-wrapper">
-      <input class="site-input" type="tel" name="phone" placeholder="Teléfono (opcional)">
+      <label class="input-label" for="contact-form-phone">Teléfono (opcional)</label>
+      <input id="contact-form-phone" class="site-input" type="tel" name="phone">
     </div>
   </div>
-  <textarea name="message" class="site-input" placeholder="Mensaje" required></textarea>
+  <div class="input-wrapper">
+    <label class="input-label" for="contact-form-message">Mensaje</label>
+    <textarea id="contact-form-message" name="message" class="site-input" required></textarea>
+  </div>
   <button class="site-button" type="submit" name="submit">Enviar</button>
 </form>
 {% endblock %}
