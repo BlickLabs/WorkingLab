@@ -111,8 +111,7 @@ textarea
   width 100%
 
 .input-wrapper--material
-  margin-top 1.2em
-  padding 30px 0 0 0
+  padding remify(18) 0 0 0
   position relative
 
   &::after, &::before
@@ -133,6 +132,10 @@ textarea
   &.is-active::after
     transform scaleX(1)
 
+  &.is-active, &.is-completed
+    .input-label--material
+      padding-left 0
+
   &.is-active .input-label--material
     color $blue
 
@@ -144,8 +147,9 @@ textarea
 
 .input-label--material
   transform translateY(25px)
-  color #4a4a4a
+  color #525876
   transition all 0.3s
+  padding-left 1.1em
 
 .site-input
   width 100%
@@ -155,8 +159,7 @@ textarea
   border none
   position relative
   background transparent
-  padding 8px 0
-  font-size 16px
+  padding 0.8em 0
 
 .site-button
   color white
