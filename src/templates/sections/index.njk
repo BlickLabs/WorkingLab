@@ -8,8 +8,8 @@
   <div class="homepage-hero__layer vertical-center">
     <div class="homepage-hero__inner">
       <h1 class="homepage-hero__title">Trabaja desde la mejor ubicación de la CDMX</h1>
-      <span class="homepage-hero__subtitle">Regístrate y obtén un Free Day Pass</span>
-      <a href="#" class="site-button">21 days free pass</a>
+      <span class="homepage-hero__subtitle">Regístrate y obtén un 21 Days Free Pass</span>
+      <button data-remodal-target="free-day-modal" class="site-button">21 days free pass</button>
     </div>
   </div>
 </header>
@@ -27,7 +27,7 @@
       <p class="homepage-free-day__text">
         Ofrece una mezcla integral de coworking con la seriedad, imagen y elegancia que quieres transmitir.
       </p>
-      <a href="#" class="site-button">Free day pass</a>
+      <button data-remodal-target="free-day-modal" class="site-button">21 days free pass</button>
     </div>
     <div class="homepage-free-day__cover cover"></div>
   </div>
@@ -110,4 +110,30 @@
     </div>
   </div>
 </section>
+<div class="remodal free-day-modal" data-remodal-id="free-day-modal">
+  <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
+  <h2 class="free-day-modal__title">¡Trabaja con nosotros!</h2>
+  <p class="free-day-modal__description">
+    Déjanos tu correo para regalarte un pase de 21 días.
+  </p>
+  <form class="free-day-modal__form" action="." method="post">
+    <div class="input-wrapper">
+      <div class="material-div">
+        <label class="input-label material-label" for="free-day-email">Apellidos</label>
+        <input id="free-day-email" class="site-input material-input" type="text" name="email" required>
+      </div>
+    </div>
+    <div class="form-message"></div>
+    <div class="button-wrapper">
+      <button type="submit" name="submit" class="site-button">Enviar</button>
+    </div>
+    <div class="loader custom-loader">
+      <div class="ball-pulse-sync">
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="blue"></div>
+      </div>
+    </div>
+  </form>
+</div>
 {% endblock %}
