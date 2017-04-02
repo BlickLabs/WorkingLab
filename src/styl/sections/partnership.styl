@@ -1,0 +1,118 @@
+.partnership-title
+  margin-top remify(59)
+
+.partnership-subtitle
+  font-weight $normal
+  font-size 15px
+  color #525876
+  text-align center
+  letter-spacing -0.2px
+  margin-top 4px
+
+.partnership__intro
+  margin-top remify(36)
+  font-size 15px
+  color #9b9b9b
+  line-height 1.4
+  width 90%
+  text-align center
+  center-block()
+  max-width 509px
+
+.partnership__content
+  font-size 16px
+  margin-top remify(110)
+  margin-bottom remify(88)
+  display flex
+  align-items flex-start
+  flex-wrap wrap
+  center-block()
+  width 90%
+  justify-content space-between
+  max-width 700px
+
+  &.show-faq
+    max-width 888px
+
+    .partnership__right
+      flex-basis 319px
+
+.partnership__left
+  flex-basis 509px
+
+  .section-title
+    margin-bottom remify(30)
+
+  .button-wrapper
+    margin-top remify(60)
+    text-align center
+
+  .site-button
+    font-size 13px
+    padding 1em 3.1em
+
+.partnership__data
+  margin-top remify(75)
+
+.partnership__client
+  margin-top remify(142)
+
+.partnership__right
+  flex-basis 50px
+  position relative
+  overflow hidden
+
+.partnership__faq-trigger
+  background $blue
+  display inline-block
+  border-radius 3px
+  padding remify(10)
+  cursor pointer
+  transition background 0.2s
+  position relative
+  z-index 2
+  right 0
+  top 0
+  margin-top remify(79)
+  
+  &:hover
+    background lightness($blue, 40%)
+
+  img
+    width remify(26)
+
+.partnership__faq
+  background #f5f5f5
+  position absolute
+  right -100%
+
+.partnership__faq-title
+  simple-border('bottom', 1px, #e5e5e5)
+  padding 1.2em 0.2em 0.92em 0.2em
+  text-align center
+
+.partnership__faq-content
+  padding remify(52) remify(29) remify(67) remify(29)
+  font-size 15px
+
+.partnership__faq-question
+  font-weight $bold
+  font-size inherit
+  letter-spacing normal
+  margin 0
+  color #414563
+
+  &:not(:first-of-type)
+    margin-top 1.4em
+
+.partnership__faq-question--use-before::before
+  content 'P: '
+
+.partnership__faq-answer
+  color #898989
+  line-height 1.27
+  margin 0
+  margin-top 0.3em
+
+.partnership__faq-answer--use-before::before
+  content 'R: '
