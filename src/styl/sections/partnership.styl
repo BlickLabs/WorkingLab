@@ -122,3 +122,52 @@
 
 .partnership__faq-answer--use-before::before
   content 'R: '
+
+@media screen and (max-width: 1023px)
+  .partnership__content
+    max-width initial
+
+    &.show-faq
+      .partnership__right
+        flex-basis 100%
+        height auto
+
+  .partnership__left,
+  .partnership__right
+    flex-basis 100%
+
+  .partnership__right
+    order -1
+    height remify(46)
+    text-align center
+
+  .partnership__faq-trigger
+    margin-top 0
+
+  .partnership__faq
+    text-align left
+    position static
+    right 0
+
+  .partnership__client
+    margin-top remify(80)
+
+@media screen and (max-width: 767px)
+  .partnership__intro,
+  .partnership-subtitle,
+  .partnership__faq-content,
+  .partnership__content
+    font-size 13.4px
+
+  .partnership__content .site-button
+    font-size 11.8px
+
+@media screen and (max-width: 700px)
+  .partnership__content
+    margin-top remify(60)
+
+    .inputs-row
+      flex-wrap wrap
+
+      .input-wrapper
+        flex-basis 100%
