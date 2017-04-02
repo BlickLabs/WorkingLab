@@ -29,6 +29,7 @@
   center-block()
   width 90%
   justify-content space-between
+  transition max-width 0.2s
   max-width 700px
 
   &.show-faq
@@ -36,6 +37,9 @@
 
     .partnership__right
       flex-basis 319px
+
+    .partnership__faq
+      right 0
 
 .partnership__left
   flex-basis 509px
@@ -74,7 +78,7 @@
   right 0
   top 0
   margin-top remify(79)
-  
+
   &:hover
     background lightness($blue, 40%)
 
@@ -83,8 +87,10 @@
 
 .partnership__faq
   background #f5f5f5
-  position absolute
+  position relative
   right -100%
+  width 100%
+  transition right 0.2s
 
 .partnership__faq-title
   simple-border('bottom', 1px, #e5e5e5)
