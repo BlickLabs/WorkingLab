@@ -4,9 +4,114 @@
 {% endblock %}
 
 {% block title %}
-Partnership
+Partnership/Referidos
 {% endblock %}
 
 {% block content %}
-
+<h1 class="section-title main-title partnership-title">Partnership/Referidos</h1>
+<h2 class="partnership-subtitle">¿Cómo funciona?</h2>
+<p>
+  Preséntanos a tu cliente amigo primo o sobrino y <span class="blue-text">cobra comisiones por cada mes que esté activo</span> en Working Chapultepec.
+</p>
+<div class="partnership__content">
+  <form id="partnership-form" class="partnership__left" action="." method="post">
+    <section class="partnership__data">
+      <h2 class="section-title">Tus datos</h2>
+      <div class="inputs-row">
+        <div class="input-wrapper">
+          <div class="material-div">
+            <label class="input-label material-label" for="partnership-name">Nombre(s)</label>
+            <input id="partnership-name" class="site-input material-input" type="text" name="name" required>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <div class="material-div">
+            <label class="input-label material-label" for="partnership-surname">Apellidos</label>
+            <input id="partnership-surname" class="site-input material-input" type="text" name="surname" required>
+          </div>
+        </div>
+      </div>
+      <div class="inputs-row">
+        <div class="input-wrapper">
+          <div class="material-div">
+            <label class="input-label material-label" for="partnership-email">Correo electrónico</label>
+            <input id="partnership-email" class="site-input material-input" type="email" name="email" required>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <div class="material-div">
+            <label class="input-label material-label" for="partnership-phone">Teléfono (opcional)</label>
+            <input id="partnership-phone" class="site-input material-input" type="tel" name="phone">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partnership__client">
+      <h2 class="section-title">Datos de tu cliente</h2>
+      <div class="inputs-row">
+        <div class="input-wrapper">
+          <div class="material-div">
+            <label class="input-label material-label" for="partnership-client-name">Nombre de tu cliente</label>
+            <input id="partnership-client-name" class="site-input material-input" type="text" name="clientname" required>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <div class="material-div">
+            <label class="input-label material-label" for="partnership-client-email">Correo de tu cliente</label>
+            <input id="partnership-client-email" class="site-input material-input" type="email" name="clientemail" required>
+          </div>
+        </div>
+      </div>
+      <div class="inputs-row">
+        <div class="input-wrapper">
+          <div class="material-div">
+            <label class="input-label material-label" for="partnership-client-phone">Teléfono de tu cliente</label>
+            <input id="partnership-client-phone" class="site-input material-input" type="tel" name="clientphone" required>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <div class="material-div">
+            <label class="input-label material-label" for="partnership-client-enterprise">Giro o nombre de la empresa</label>
+            <input id="partnership-client-enterprise" class="site-input material-input" type="text" name="cliententerprise">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="form-message"></div>
+    <div class="button-wrapper">
+      <button class="site-button" type="submit" name="submit">Enviar</button>
+    </div>
+    <div class="loader custom-loader">
+      <div class="ball-pulse-sync">
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="blue"></div>
+      </div>
+    </div>
+  </form>
+  <div class="partnership__right">
+    <span id="partnership-faq-trigger" class="partnership__faq-trigger"><img src="img/icons/help.png" alt="Preguntas frecuentes" /></span>
+    <section class="partnership__faq">
+      <h2 class="partnership__faq-title">Preguntas frecuentes</h2>
+      <div class="partnership__faq-content">
+        <h3 class="partnership__faq-question">Valor de la comisión:</h3>
+        <p class="partnership__faq-answer">
+          10% de la renta mensual
+        </p>
+        <h3 class="partnership__faq-question partnership__faq-question--use-before">¿Yo tengo que hacer la venta o programar el recorrido?</h3>
+        <p class="partnership__faq-answer partnership__faq-answer--use-before">
+          No, lo único que hay q hacer es poner sus datos y dejar que el equipo de Ventas de Working Chapultepec lo enamore y cierre la operación más provechosa.
+        </p>
+        <h3 class="partnership__faq-question partnership__faq-question--use-before">¿Cómo sé que lo van a contactar? ¿Y/ o darle el procedimiento adecuado?</h3>
+        <p class="partnership__faq-answer partnership__faq-answer--use-before">
+          En el momento que introduzcas los datos te llegara un mail de confirmación con un código de seguimiento, se te enviaran boletines informativos en todo el proceso, hasta el cierre de la venta (opcional).
+        </p>
+        <h3 class="partnership__faq-question partnership__faq-question--use-before">¿Puedo estar en el recorrido o involucrado en el proceso?</h3>
+        <p class="partnership__faq-answer partnership__faq-answer--use-before">
+          Buscamos que el proceso de PARTNERSHIP y REFERIDOS sea lo más transparente posible por lo que nunca se contactara a tu cliente sin tu consentimiento y por ende es tu elección si quieres estar presente en los procesos de la venta o no.
+        </p>
+      </div>
+    </section>
+  </div>
+</div>
 {% endblock %}
