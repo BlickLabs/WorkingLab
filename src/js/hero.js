@@ -2,6 +2,8 @@
   $('#homepage-hero-carousel').slick({
     prevArrow: false,
     nextArrow: false,
-    autoplay: true
+    dots: true,
+    autoplay: true,
+    pauseOnFocus: false
   });
 })();

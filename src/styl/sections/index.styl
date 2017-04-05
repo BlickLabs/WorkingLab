@@ -1,22 +1,60 @@
 .homepage-hero
   height calc(95vh - 72px)
   min-height 400px
+  position relative
 
   @media screen and (orientation: portrait)
     @media screen and (min-height: 400px) and (min-width: 400px)
       max-height 76vw
 
 .homepage-hero__carousel
-  position fixed
-  top 0
-  left 0
-  z-index -1
+  position absolute
   width 100%
 
   &, .slick-list,
   .slick-track,
   .homepage-hero__carousel-item
     height 100%
+
+  .slick-list
+    position fixed
+    top 0
+    left 0
+    z-index -1
+    width 100%
+
+  .slick-dots
+    position absolute
+    bottom 10px
+    left 50%
+    transform translateX(-50%)
+    list-style none
+    padding 0
+    width 100%
+    text-align center
+
+    li
+      display inline-block
+
+    li:nth-child(n+1)
+      margin-left 10px
+
+    button
+      background white
+      outline none
+      border none
+      overflow hidden
+      color white
+      height 12px
+      font-size 0
+      line-height 5px
+      text-overflow hidden
+      cursor pointer
+      border-radius 50%
+      opacity 0.58
+
+    .slick-active button
+      opacity 1
 
 .homepage-hero__layer
   background rgba(black, 0.25)
