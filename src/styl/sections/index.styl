@@ -1,14 +1,13 @@
 .homepage-hero
   height calc(95vh - 72px)
   min-height 400px
-  position relative
 
   @media screen and (orientation: portrait)
     @media screen and (min-height: 400px) and (min-width: 400px)
       max-height 76vw
 
 .homepage-hero__carousel
-  position absolute
+  position fixed
   top 0
   left 0
   z-index -1
@@ -20,7 +19,7 @@
     height 100%
 
 .homepage-hero__layer
-  background rgba(black, 0.2)
+  background rgba(black, 0.25)
   height 100%
 
 .homepage-hero__inner
@@ -44,6 +43,7 @@
   font-size remify(20)
 
 .homepage-introduction
+  background white
   padding remify(26) 0 remify(23) 0
   text-align center
 
@@ -116,6 +116,7 @@
   height remify(475)
 
 .homepage-services
+  background white
   padding remify(59) 0
   text-align center
 
@@ -242,6 +243,9 @@
   position relative
 
 .homepage-testimonials
+  background white
+  position relative
+  z-index 1
   padding remify(56) 0 remify(103) 0
   text-align center
 
