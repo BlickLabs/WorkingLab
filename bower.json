@@ -19,7 +19,8 @@
     "loaders.css": "^0.1.2",
     "normalize-css": "^5.0.0",
     "font-awesome": "fontawesome#^4.7.0",
-    "remodal": "^1.1.1"
+    "remodal": "^1.1.1",
+    "slick-carousel": "^1.6.0"
   },
   "resolutions": {
     "jquery": "^3.1.0"
