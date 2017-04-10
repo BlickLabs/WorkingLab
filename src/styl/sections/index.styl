@@ -294,27 +294,38 @@
   font-size remify(19)
   font-weight normal
 
-.homepage-testimonials__items
-  width 90%
+.homepage-testimonials__carousel
+  width 80%
+  margin-top remify(34)
   center-block()
-  display flex
-  justify-content space-between
+  position relative
   max-width 822px
-  flex-wrap wrap
 
-.homepage-testimonials__item-icon
-  background $blue
-  height remify(78)
-  width remify(81)
-  border-radius 3px
-  center-block()
+  .slick-prev,
+  .slick-next
+    position absolute
+    top 'calc(50% + %s)' % remify(47)
+    transform translateY(-50%)
+    color $blue
+    cursor pointer
+    font-size remify(60)
+    z-index 2
 
-  img
-    width remify(32.5)
+  .slick-prev
+    left remify(-30)
+
+  .slick-next
+    right remify(-30)
 
 .homepage-testimonials__item
-  margin-top remify(34)
-  flex-basis 48.65%
+  outline none
+
+.homepage-testimonials__item-icon
+  height remify(140)
+  width remify(140)
+  border-radius 50%
+  center-block()
+  simple-border('all', 2px, $blue)
 
 .homepage-testimonials__item-title
   color #3b7adb
@@ -327,6 +338,8 @@
   padding remify(69) remify(31) remify(17) remify(31)
   z-index -1
   min-height remify(212)
+  width 95%
+  center-block()
 
 .homepage-testimonials__item-text
   font-size 14px
