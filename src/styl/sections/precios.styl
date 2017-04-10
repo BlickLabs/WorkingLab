@@ -26,14 +26,19 @@
   display flex
   justify-content center
   align-items center
-  height remify(66)
-  width remify(92)
+  height remify(74)
+  width remify(99)
   center-block()
   text-align center
   simple-border('all', 1px, #e5e5e5)
+  transition transform 0.2s
+
+  &:hover,
+  &.hover
+    transform scale(1.68)
 
   img
-    width remify(45)
+    width remify(52)
 
 .prices__item-header
   simple-border('all', 1px, #e5e5e5)
