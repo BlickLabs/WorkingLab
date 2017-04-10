@@ -4,7 +4,8 @@
     nextArrow: false,
     dots: true,
     autoplay: true,
-    pauseOnFocus: false
+    pauseOnFocus: false,
+    autoplaySpeed: 5500
   });
 
   $('#homepage-testimonials-carousel').slick({
