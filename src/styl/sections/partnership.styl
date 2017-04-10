@@ -46,7 +46,7 @@
       right 0
 
 .partnership__left
-  flex-basis 509px
+  flex-basis 530px
 
   .section-title
     margin-bottom remify(30)
@@ -73,7 +73,7 @@
   margin-top remify(142)
 
 .partnership__right
-  flex-basis 50px
+  flex-basis 100px
   position relative
   overflow hidden
   height 200px
@@ -82,20 +82,28 @@
   background $blue
   display inline-block
   border-radius 3px
-  padding remify(10)
+  padding remify(10) 0 0
   cursor pointer
   transition background 0.2s
   position relative
   z-index 2
   right 0
   top 0
+  text-align center
   margin-top remify(79)
 
   &:hover
     background lightness($blue, 40%)
 
   img
-    width remify(26)
+    width remify(44)
+
+  span
+    display block
+    background white
+    color $blue
+    margin-top remify(10)
+    padding-top remify(13)
 
 .partnership__faq
   background #f5f5f5
@@ -150,11 +158,25 @@
 
   .partnership__right
     order -1
-    height remify(46)
+    height auto
     text-align center
 
   .partnership__faq-trigger
     margin-top 0
+    display flex
+    justify-content center
+    align-items center
+    padding 10px
+    center-block()
+    margin-bottom 30px
+    width remify(300)
+
+    span
+      background transparent
+      color white
+      margin-top 0
+      padding-top 0
+      margin-left 20px
 
   .partnership__faq
     text-align left
