@@ -1,7 +1,7 @@
 .services__items
   display flex
   flex-wrap wrap
-  max-width 556px
+  max-width 650px
   width 90%
   center-block()
   margin-top remify(46)
@@ -28,13 +28,13 @@
     flex-basis 45%
 
     .services__item-icon
-      width remify(22)
+      width remify(40)
 
   &:nth-child(2n)
     flex-basis 34%
 
     .services__item-icon
-      width remify(28)
+      width remify(46)
 
   &:hover .services__item-icon
     transform scale(1.4)
@@ -48,7 +48,7 @@
   letter-spacing (-0.2)
   color #525876
 
-@media screen and (max-width: 650px)
+@media screen and (max-width: 767px)
   .services__items::after
     content ''
     display none
