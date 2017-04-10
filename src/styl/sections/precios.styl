@@ -32,10 +32,12 @@
   text-align center
   simple-border('all', 1px, #e5e5e5)
   transition transform 0.2s
+  z-index 2
+  position relative
 
   &:hover,
   &.hover
-    transform scale(1.68)
+    transform scale(2)
 
   img
     width remify(52)
@@ -46,10 +48,10 @@
   margin-top remify(-33)
   padding-bottom:remify(19)
   padding-top remify(53)
-  z-index -1
   position relative
 
 .prices__item-title
+  display inline-block
   color #0d82eb
   text-transform uppercase
   font-size remify(16)
