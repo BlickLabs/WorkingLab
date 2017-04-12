@@ -11,7 +11,4 @@ gulp.task('copy:images', function () {
   gulp.src(config.paths.src.img)
     .pipe(gulpIf(production, imagemin()))
     .pipe(gulp.dest(baseDir.img));
-
-  gulp.src(config.paths.src.favicon)
-    .pipe(gulp.dest(baseDir.root));
 });
