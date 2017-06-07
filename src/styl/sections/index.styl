@@ -1,0 +1,416 @@
+.homepage-hero
+  height calc(95vh - 72px)
+  min-height 400px
+  position relative
+
+  @media screen and (orientation: portrait)
+    @media screen and (min-height: 400px) and (min-width: 400px)
+      max-height 76vw
+
+.homepage-hero__carousel
+  position absolute
+  width 100%
+
+  &, .slick-list,
+  .slick-track,
+  .homepage-hero__carousel-item
+    height 100%
+
+  .slick-list
+    position fixed
+    top 0
+    left 0
+    z-index -1
+    width 100%
+
+  .slick-dots
+    position absolute
+    bottom 10px
+    transform scale(0.5)
+    list-style none
+    padding 0
+    width 100%
+    text-align center
+
+    li
+      display inline-block
+
+    li:nth-child(n+1)
+      margin-left 10px
+
+    button
+      background white
+      outline none
+      border none
+      overflow hidden
+      color white
+      height 12px
+      font-size 0
+      line-height 5px
+      text-overflow hidden
+      cursor pointer
+      border-radius 50%
+      opacity 0.58
+
+    .slick-active button
+      opacity 1
+
+.homepage-hero__layer
+  background rgba(black, 0.25)
+  height 100%
+
+.homepage-hero__inner
+  z-index 1
+  color white
+  text-align center
+  width 86%
+  max-width 610px
+
+  .site-button
+    font-size remify(13)
+    margin-top remify(17)
+
+.homepage-hero__title
+  font-size remify(39)
+  font-weight normal
+  letter-spacing remify(-0.6)
+
+.homepage-hero__subtitle
+  display block
+  margin-top remify(72)
+  font-size remify(20)
+
+.homepage-introduction
+  background white
+  padding remify(26) 0 remify(23) 0
+  text-align center
+
+.homepage-introduction__icon
+  width remify(116)
+
+.homepage-introduction__title
+  margin-top remify(31)
+  font-size remify(32)
+  letter-spacing remify(0.6)
+  color #525876
+
+.homepage-introduction__text
+  center-block()
+  margin-top remify(17)
+  max-width 380px
+  font-size remify(16.5)
+  color #9b9b9b
+  width 94%
+
+  &::after
+    content ' '
+    background #e5e5e5
+    display block
+    height 1px
+    center-block()
+    margin-top remify(31)
+    width remify(58)
+
+.homepage-free-day
+  background #f6f6f6
+  padding remify(19) 0
+
+.homepage-free-day__inner
+  center-block()
+  width 97%
+  position relative
+  padding-left 156px
+
+.homepage-free-day__content
+  border-radius 3px
+  background white
+  width remify(278)
+  padding remify(48) remify(50) remify(44) remify(34)
+  position absolute
+  left 0
+  top 50%
+  transform translateY(-50%)
+
+  .site-button
+    font-size remify(13)
+
+.homepage-free-day__title
+  color #414563
+  font-size remify(29)
+  font-weight bold
+
+.homepage-free-day__text
+  color #414563
+  font-size remify(15)
+  line-height 1.47
+  margin-top remify(17)
+
+.homepage-free-day__cover
+  background-image url('../img/backgrounds/home.jpg')
+  width 100%
+  height remify(475)
+
+.homepage-services
+  background white
+  padding remify(59) 0
+  text-align center
+
+.homepage-services__inner
+  width 90%
+  max-width 638px
+  center-block()
+
+  .site-button
+    margin-top remify(88)
+    font-size remify(13)
+    min-width remify(137)
+
+.homepage-services__title
+  font-size remify(19)
+  font-weight normal
+  color #525876
+
+.homepage-services__items
+  display flex
+  justify-content space-between
+  margin-top remify(16)
+
+.homepage-services__item
+  padding-top remify(50)
+
+.homepage-services__item-icon
+  display block
+  height remify(65)
+  center-block()
+  transition transform 0.2s
+
+  &:hover
+    transform scale(1.4)
+
+.homepage-services__item-label
+  display block
+  font-size remify(15)
+  color #525876
+  letter-spacing remify(-0.2)
+  margin-top remify(35)
+  max-width remify(115)
+  center-block()
+
+.homepage-newsletter
+  background-image url('../img/backgrounds/home-newsletter.jpg')
+  padding remify(50) 0 remify(38) 0
+
+  .custom-loader
+    margin-top remify(30)
+
+    div div
+      background white
+
+  .error,
+  .success
+    color white
+
+  .error .fa
+    color $errorColor
+
+  .success .fa
+    color $successColor
+
+  label.error
+    padding-top 0.6em
+
+    &::before
+      color $errorColor
+      content '●'
+      padding-right 0.4em
+
+.homepage-newsletter__quote,
+.homepage_newsletter__form
+  width 90%
+
+.homepage-newsletter__quote
+  color white
+  margin-left 5%
+  max-width 433px
+
+.homepage-newsletter__quote-text
+  font-size remify(38)
+  letter-spacing remify(-0.6)
+
+.homepage-newsletter__quote-author
+  display block
+  font-size remify(21)
+  line-height 1.71
+  letter-spacing remify(-0.4)
+  margin-top remify(10)
+
+  &::before
+    content '- '
+
+.homepage_newsletter__form
+  max-width 351px
+  center-block()
+  text-align center
+  margin-top remify(30)
+
+  .button-wrapper
+    margin-top remify(17)
+    font-size remify(13)
+
+  .site-button
+    width remify(137)
+
+.homepage_newsletter__form-title
+  font-size remify(17)
+  text-transform uppercase
+  color white
+  font-weight $bold
+  letter-spacing remify(-0.3)
+
+#home-email
+  background-color rgba(white, 0.9)
+  background-image url('../img/icons/message.png')
+  background-size 22px 15px
+  background-position remify(18)
+  background-repeat no-repeat
+  border-radius 3px
+  border none
+  outline none
+  margin-top remify(17)
+  padding remify(18) remify(15) remify(18) 45px
+  width 100%
+  position relative
+
+.homepage-testimonials
+  background white
+  position relative
+  z-index 1
+  padding remify(56) 0 remify(103) 0
+  text-align center
+
+.homepage-testimonials__title
+  color #525876
+  font-size remify(19)
+  font-weight normal
+
+.homepage-testimonials__carousel
+  width 80%
+  margin-top remify(34)
+  center-block()
+  position relative
+  max-width 822px
+
+  .slick-prev,
+  .slick-next
+    position absolute
+    top 'calc(50% + %s)' % remify(47)
+    transform translateY(-50%)
+    color $blue
+    cursor pointer
+    font-size remify(60)
+    z-index 2
+
+  .slick-prev
+    left remify(-30)
+
+  .slick-next
+    right remify(-30)
+
+.homepage-testimonials__item
+  outline none
+
+.homepage-testimonials__item-icon
+  height remify(140)
+  width remify(140)
+  border-radius 50%
+  center-block()
+  simple-border('all', 2px, $blue)
+
+.homepage-testimonials__item-title
+  color #3b7adb
+  font-size remify(18)
+
+.homepage-testimonials__item-content
+  simple-border('all', 1px, #e5e5e5)
+  margin-top remify(-35)
+  position relative
+  padding remify(69) remify(31) remify(17) remify(31)
+  z-index -1
+  min-height remify(212)
+  width 95%
+  center-block()
+
+.homepage-testimonials__item-text
+  font-size 14px
+  color #898989
+  line-height 1.36
+  margin 0
+  margin-top 12px
+
+.free-day-modal__close
+  right 0
+  transform translateY(-100%)
+  top remify(-15)
+  left initial
+
+  &::before
+    color white
+    font-size remify(50)
+
+.free-day-modal__description
+  font-size 15px
+  color #5a5a5a
+
+.free-day-modal__form
+  .input-wrapper
+    font-size 15px
+    width 100%
+    max-width 480px
+    center-block()
+
+  .custom-loader
+    margin-top remify(35)
+    margin-bottom remify(10)
+
+  .material-div
+    padding-top remify(5)
+
+  .site-button
+    font-size remify(14.2)
+    padding 1em 2.5em
+
+  .button-wrapper
+    margin-top remify(30)
+
+@media screen and (max-width: 925px)
+  .homepage-testimonials__items
+    max-width 500px
+
+  .homepage-testimonials__item
+    flex-basis 100%
+
+  .homepage-testimonials__item-content
+    min-height initial
+    padding-bottom remify(32)
+
+@media screen and (max-width: 767px)
+  .homepage-services__items
+    max-width 400px
+    flex-wrap wrap
+    justify-content space-around
+    center-block()
+
+  .homepage-services__item
+    flex-basis 40%
+
+  .free-day-modal__description,
+  .free-day-modal__form .input-wrapper
+    font-size 13px
+
+@media screen and (max-width: 450px)
+  .homepage-free-day
+    padding 0
+
+  .homepage-free-day__inner
+    width 100%
+    padding-left 30%

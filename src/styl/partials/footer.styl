@@ -1,0 +1,94 @@
+footer
+  background-image url('../img/backgrounds/footer.png')
+  color white
+  padding-bottom remify(40)
+  font-size 14px
+  padding-top remify(62)
+  simple-border('top', remify(26), #f5f5f5)
+  text-align center
+
+.footer-logo img
+  width remify(155)
+
+.footer-inner__content
+  display flex
+  flex-wrap wrap
+  align-items flex-start
+  center-block()
+  justify-content space-between
+  width 90%
+  max-width 840px
+
+  a
+    color white
+
+.footer-inner__links,
+.footer-inner__contact
+  text-align left
+
+.footer-inner__links
+  line-height 1.36
+
+.footer-inner__link-item
+  display block
+
+.footer-inner__social
+  align-self center
+  margin-left 100px
+
+.footer-inner__social-item
+  display inline-block
+  line-height 40px
+  height 40px
+  width 40px
+  simple-border('all', 1px, white)
+  margin 0 6px
+
+  .fa
+    font-size 17px
+
+.footer-inner__contact-item
+  line-height 1.53
+  font-size 15px
+
+  .fa
+    margin-right 14px
+    font-size 18px
+
+  &:nth-of-type(3) .fa
+    font-size 15px
+
+.footer-inner__contact-schedule
+  margin-top 15px
+
+.footer-address
+  display block
+  margin-top remify(41)
+  line-height 1.36
+
+@media screen and (max-width: 767px)
+  .footer-inner__content
+    margin-top remify(40)
+
+  .footer-inner__links,
+  .footer-inner__contact
+    align-self center
+    flex-basis 50%
+    text-align center
+    margin-top remify(50)
+
+  .footer-inner__links
+    line-height 1.8
+
+  .footer-inner__social
+    order -1
+    flex-basis 100%
+    margin-left 0
+
+  .footer-inner__contact-item:nth-of-type(2)
+    display none
+
+@media screen and (max-width: 450px)
+  .footer-inner__links,
+  .footer-inner__contact
+    flex-basis 100%

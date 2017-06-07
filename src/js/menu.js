@@ -1,5 +1,5 @@
 (function () {
-  var mobile = window.matchMedia('(max-width: 876px)'); // Change
+  var mobile = window.matchMedia('(max-width: 810px)');
 
   function detectTouch(e) {
     if (!$(e.target).is('nav .menu-trigger') && !$(e.target).is('nav .menu-container') && !$(e.target).closest('nav .menu-container').length && $('nav .menu-container').hasClass('show-menu')) {
@@ -39,4 +39,14 @@
       $('nav .menu-trigger').click(detectClick);
     }
   });
+
+  if (!$('nav').hasClass('sections-nav')) {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 20) {
+        $('nav').addClass('fixed');
+      } else {
+        $('nav').removeClass('fixed');
+      }
+    });
+  }
 })();

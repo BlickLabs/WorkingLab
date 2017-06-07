@@ -2,7 +2,7 @@ var src = './src',
   dist = './dist',
   build = './build',
   bower = './bower_components',
-  package = 'workinglab';
+  package = 'workingch';
 
 module.exports = {
   paths: {
@@ -14,7 +14,7 @@ module.exports = {
       scripts_all: src + '/js/**/*.js',
       scripts_main: src + '/js/app.js',
       img: src + '/img/**/*.*',
-      favicon: src + '/favicon.ico',
+      favicon: src + '/favicon/**.**',
       fonts: src + '/fonts/**/*.*',
       templates_all: src + '/templates/**/*.njk',
       templates_dir: src + '/templates/',
@@ -53,7 +53,7 @@ module.exports = {
   },
   etc: {
     domain: '',
-    projectName: 'WorkingLab',
+    projectName: 'Working Chapultepec',
     formattedName: package
   }
 };

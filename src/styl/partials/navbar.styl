@@ -1,66 +1,97 @@
 nav
-  background white
   display flex
   align-items center
-  height 78px // Change
+  height 82px
   left 0
+  padding 0 remify(49) 0 remify(38)
   position fixed
   top 0
   width 100%
   z-index 12
+
+  &:not(.sections-nav)
+    transition 0.2s
+
+    &:not(.fixed)
+      background transparent
+
+      .desktop-logo-container img
+        width 116px
+
+      .menu
+        justify-content flex-start
+        margin-left 98px
+
+  &.fixed,
+  &.sections-nav
+    background #326197
+
+    .menu
+      justify-content flex-end
 
   .menu-trigger,
   .mobile-logo-container
     display none
 
   .menu-trigger
-    color white // Change
+    color white
 
   .desktop-logo-container
-    padding-top remify(5) // Change
+    padding-top 10px
 
     img
-      width remify(150) // Change
+      width 127px
+      transition width 0.2s
 
   .menu-container
     flex-grow 1
-    font-size remify(19) // Change
-    text-align right
+    font-size 16px
     height 100%
 
   .menu
+    width 100%
+    transition justify-content 0.3s
+    display flex
     height 100%
 
   .menu-link
+    color white
     display inline-block
     vertical-align middle
-    line-height 74px // Change
+    line-height 82px
 
     &:hover, &.active
-      color white // Change
+      color #4a90e2
 
-@media screen and (max-width: 876px) // Change
+    &:not(:first-child)
+      margin-left remify(32)
+
+@media screen and (max-width: 810px)
   nav
     justify-content space-between
-    height 56px // Change
-    padding 0 18px // CHange
+    height 56px
+    padding 0 18px
+
+    .desktop-logo-container img
+      width 96px !important
 
     .mobile-logo-container
       display block
-      center-block()
-      width 70% // Change
+      text-align center
+      background #326197
+      padding 40px 0
 
       img
-        width 100%
+        width 45%
 
     .menu-trigger
       display block
       float right
-      margin 18px 0 // Change
-      font-size 18px // Change
+      margin 0
+      font-size 18px
 
     .menu-container
-      background white // Change
+      background #f5f5f5
       height 100vh
       margin-right 0
       overflow-y auto
@@ -69,18 +100,26 @@ nav
       top 0
       transition right 0.2s
       width 280px
-      padding-top 25px // Change
 
       &.show-menu
+        box-shadow 0 0 10px black
         right 0
 
       .menu
-        margin-top 30px // Change
+        margin-left 0 !important
+        display block
+        margin-bottom 40px
+        margin-top 30px
         text-align left
         height auto
 
       .menu-link
-        color white
+        color #525876
         display block
         height auto
         line-height 1
+        margin-left 0
+        padding 0.8em 2.5em
+
+        &:hover, &.active
+          color $blue

@@ -4,4 +4,143 @@
 {% endblock %}
 
 {% block content %}
+<header class="homepage-hero vertical-center">
+  <div id="homepage-hero-carousel" class="homepage-hero__carousel">
+    <div class="homepage-hero__carousel-item cover" style="background-image: url(img/carousel/hero-1.jpg)"><div class="homepage-hero__layer"></div></div>
+    <div class="homepage-hero__carousel-item cover" style="background-image: url(img/carousel/hero-2.jpg)"><div class="homepage-hero__layer"></div></div>
+    <div class="homepage-hero__carousel-item cover" style="background-image: url(img/carousel/hero-3.jpg)"><div class="homepage-hero__layer"></div></div>
+  </div>
+  <div class="homepage-hero__inner">
+    <h1 class="homepage-hero__title">Trabaja desde la mejor ubicación de la CDMX</h1>
+    <span class="homepage-hero__subtitle">Regístrate y obtén un pase de 21 Días Gratis</span>
+    <button data-remodal-target="free-day-modal" class="site-button">Pase de 21 Días Gratis</button>
+  </div>
+</header>
+<section class="homepage-introduction">
+  <h2 class="homepage-introduction__title">Working Chapultepec</h2>
+  <p class="homepage-introduction__text">
+    Trabaja en el piso más alto de Av. Chapultepec con las vistas más claras al Castillo de Chapultepec y Paseo de la Reforma
+  </p>
+</section>
+<section class="homepage-free-day">
+  <div class="homepage-free-day__inner">
+    <div class="homepage-free-day__content">
+      <h2 class="homepage-free-day__title">Working Chapultepec</h2>
+      <p class="homepage-free-day__text">
+        Ofrece una mezcla integral de coworking con la seriedad, imagen y elegancia que quieres transmitir.
+      </p>
+      <button data-remodal-target="free-day-modal" class="site-button">pase de 21 Días Gratis</button>
+    </div>
+    <div class="homepage-free-day__cover cover simple-parallax"></div>
+  </div>
+</section>
+<section class="homepage-services">
+  <div class="homepage-services__inner">
+    <h2 class="homepage-services__title">Algunos de nuestros servicios</h2>
+    <div class="homepage-services__items">
+      <div class="homepage-services__item">
+        <img class="homepage-services__item-icon" src="img/icons/roofgarden.png" alt="Acceso a Roof Garden" />
+        <span class="homepage-services__item-label">Acceso a Roof Garden</span>
+      </div>
+      <div class="homepage-services__item">
+        <img class="homepage-services__item-icon" src="img/icons/castle.png" alt="Vista al Castillo de Chapultepec" />
+        <span class="homepage-services__item-label">Vista al Castillo de Chapultepec</span>
+      </div>
+      <div class="homepage-services__item">
+        <img class="homepage-services__item-icon" src="img/icons/clock.png" alt="Acceso al edificio 24/7" />
+        <span class="homepage-services__item-label">Acceso al edificio 24/7</span>
+      </div>
+      <div class="homepage-services__item">
+        <img class="homepage-services__item-icon" src="img/icons/desk2.png" alt="Oficinas equipadas" />
+        <span class="homepage-services__item-label">Oficinas equipadas</span>
+      </div>
+      <div class="homepage-services__item">
+        <img class="homepage-services__item-icon" src="img/icons/seat.png" alt="Sala de juntas" />
+        <span class="homepage-services__item-label">Sala de<br>juntas</span>
+      </div>
+    </div>
+    <a href="servicios.html" class="site-button">Conoce más</a>
+  </div>
+</section>
+<section class="homepage-newsletter cover simple-parallax">
+  <div class="homepage-newsletter__quote">
+    <span class="homepage-newsletter__quote-text">It always seems impossible until it's done</span>
+    <span class="homepage-newsletter__quote-author">Nelson Mandela</span>
+  </div>
+  <form id="homepage-newsletter" class="homepage_newsletter__form" action="http://integrations.blick.mx/workinglabs/newsletter/" method="post">
+    <h2 class="homepage_newsletter__form-title">Suscríbete a nuestro Newsletter</h2>
+    <div class="input-wrapper">
+      <input id="home-email" type="email" name="email" required placeholder=" ">
+    </div>
+    <div class="form-message"></div>
+    <div class="button-wrapper">
+      <button type="submit" name="submit" class="site-button">Suscribirse</button>
+    </div>
+    <div class="loader custom-loader">
+      <div class="ball-pulse-sync">
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="blue"></div>
+      </div>
+    </div>
+  </form>
+</section>
+<section class="homepage-testimonials">
+  <h2 class="homepage-testimonials__title">Testimoniales</h2>
+  <div id="homepage-testimonials-carousel" class="homepage-testimonials__carousel">
+    <div class="homepage-testimonials__item">
+      <img class="homepage-testimonials__item-icon" src="img/carousel/testimonials-1.jpg" alt="Abraham, Consultoria Legal Fysa" />
+      <div class="homepage-testimonials__item-content">
+        <h3 class="homepage-testimonials__item-title">Abraham, Consultoria Legal Fysa</h3>
+        <p class="homepage-testimonials__item-text">
+          Las oficinas están Completamente equipadas, de las vistas mas claras que he visto al castillo de chapultepec, Working Chapultepec le da a mi negocio presencia y formalidad.
+        </p>
+      </div>
+    </div>
+    <div class="homepage-testimonials__item">
+      <img class="homepage-testimonials__item-icon" src="img/carousel/testimonials-2.jpg" alt="Luis Carvajal, DNA Sociedad Financiera" />
+      <div class="homepage-testimonials__item-content">
+        <h3 class="homepage-testimonials__item-title">Luis Carvajal, DNA Sociedad Financiera</h3>
+        <p class="homepage-testimonials__item-text">
+          Encontré en Working Chapultepec una solución practica e integral para la renta de un espacio para mi negocio. La ubicación es inmejorable y con todos los servicios que incluye, se logra un concepto muy completo.
+        </p>
+      </div>
+    </div>
+    <div class="homepage-testimonials__item">
+      <img class="homepage-testimonials__item-icon" src="img/carousel/testimonials-3.jpg" alt="Enrique, Freelancer" />
+      <div class="homepage-testimonials__item-content">
+        <h3 class="homepage-testimonials__item-title">Enrique, Freelancer</h3>
+        <p class="homepage-testimonials__item-text">
+          Con Working Chapultepec estoy muy contento trabajando en mis proyectos, sus oficinas cuentan con todos los servicios ofreciendo comodidad y confianza.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="remodal free-day-modal" data-remodal-id="free-day-modal">
+  <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
+  <h2 class="section-title free-day-modal__title">¡Trabaja con nosotros!</h2>
+  <p class="free-day-modal__description">
+    Déjanos tu correo para regalarte un pase de 21 días.
+  </p>
+  <form id="free-day-form" class="free-day-modal__form" action="http://integrations.blick.mx/workinglabs/free/" method="post">
+    <div class="input-wrapper">
+      <div class="material-div">
+        <label class="input-label material-label" for="free-day-email">Correo electrónico</label>
+        <input id="free-day-email" class="site-input material-input" type="email" name="email" required>
+      </div>
+    </div>
+    <div class="form-message"></div>
+    <div class="button-wrapper">
+      <button type="submit" name="submit" class="site-button">Enviar</button>
+    </div>
+    <div class="loader custom-loader">
+      <div class="ball-pulse-sync">
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="blue"></div>
+      </div>
+    </div>
+  </form>
+</div>
 {% endblock %}

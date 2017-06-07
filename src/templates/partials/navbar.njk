@@ -1,16 +1,21 @@
-<nav>
+<nav {% if section != 'index' %}class="sections-nav"{% endif %}>
   <div class="desktop-logo-container">
-    <a href="index.html"><img src="#" alt="Logo"></a> // Change
+    <a href="/"><img src="img/logos/logo.png" alt="Logo"></a>
   </div>
   <div class="menu-trigger">
     <span class="fa fa-bars"></span>
   </div>
   <div class="menu-container">
     <div class="mobile-logo-container">
-      <a href="index.html"><img src="#" alt="Logo"></a> // Change
+      <a href="/"><img src="img/logos/logo.png" alt="Logo"></a>
     </div>
     <div class="menu">
-      <a href="index.html" class="menu-link {% if section == 'index' %}active{% endif %}">Home</a>
+      <a href="/" class="menu-link {% if section == 'index' %}active{% endif %}">Inicio</a>
+      <a href="servicios.html" class="menu-link {% if section == 'servicios' %}active{% endif %}">Servicios</a>
+      <a href="precios.html" class="menu-link {% if section == 'precios' %}active{% endif %}">Precios</a>
+      <a href="nosotros.html" class="menu-link {% if section == 'nosotros' %}active{% endif %}">Nosotros</a>
+      <a href="contacto.html" class="menu-link {% if section == 'contacto' %}active{% endif %}">Contacto</a>
+      <a href="partnership.html" class="menu-link {% if section == 'partnership' %}active{% endif %}">Partnership</a>
     </div>
   </div>
 </nav>

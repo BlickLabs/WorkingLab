@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     'build:scripts',
     'copy:fonts',
     'copy:images',
+    'copy:favicon',
     'build:html'
   ],
   defaultTasks = [
