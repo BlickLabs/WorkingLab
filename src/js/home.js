@@ -12,4 +12,8 @@
     prevArrow: '<button class="fa fa-angle-left slick-prev"></button>',
     nextArrow: '<button class="fa fa-angle-right slick-next"></button>'
   });
+
+  $(document).on('opening', '.locations-modal', function () {
+    $(this).children('.locations-carousel').slick('resize');
+  });
 })();
