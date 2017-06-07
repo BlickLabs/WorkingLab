@@ -8,8 +8,8 @@
     autoplaySpeed: 5500
   });
 
-  $('#homepage-testimonials-carousel').slick({
-    prevArrow: '<span class="fa fa-angle-left slick-prev"></span>',
-    nextArrow: '<span class="fa fa-angle-right slick-next"></span>'
+  $('#homepage-testimonials-carousel, .locations-carousel').slick({
+    prevArrow: '<button class="fa fa-angle-left slick-prev"></button>',
+    nextArrow: '<button class="fa fa-angle-right slick-next"></button>'
   });
 })();
