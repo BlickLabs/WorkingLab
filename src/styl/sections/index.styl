@@ -281,6 +281,66 @@
   width 100%
   position relative
 
+.homepage-locations
+  background white
+  text-align center
+  padding-top 60px
+  padding-bottom remify(90)
+  simple-border('bottom', 1px, #e5e5e5)
+
+.homepage-locations__title
+  font-size remify(18)
+  letter-spacing remify(0.6)
+  color #525876
+  text-transform uppercase
+
+.homepage-locations__inner
+  margin-top 12px
+  display flex
+  justify-content space-around
+  max-width 860px
+  width 90%
+  flex-wrap wrap
+  center-block()
+
+.homepage-locations__item
+  flex-basis 210px
+  font-size 14px
+  color #525876
+  line-height 1.36
+  margin-top remify(60)
+
+  .site-button
+    font-size 13px
+    padding 13px 33px
+    line-height 1
+    margin-top remify(34)
+
+.homepage-locations__icon
+  width 33px
+
+.homepage-locations__item-location
+  display block
+  margin-top 17px
+
+.locations-modal
+  width 85%
+  padding 0
+
+.locations-carousel
+  .slick-prev,
+  .slick-next
+    top 50%
+    color white
+
+  .slick-prev
+    left 0
+    transform translate(-120%, -50%)
+
+  .slick-next
+    right 0
+    transform translate(120%, -50%)
+
 .homepage-testimonials
   background white
   position relative
@@ -302,19 +362,27 @@
 
   .slick-prev,
   .slick-next
-    position absolute
     top 'calc(50% + %s)' % remify(47)
     transform translateY(-50%)
     color $blue
-    cursor pointer
-    font-size remify(60)
-    z-index 2
 
   .slick-prev
     left remify(-30)
 
   .slick-next
     right remify(-30)
+
+.homepage-testimonials__carousel,
+.locations-carousel
+  .slick-prev,
+  .slick-next
+    position absolute
+    cursor pointer
+    font-size remify(60)
+    z-index 2
+    background none
+    border none
+    outline none
 
 .homepage-testimonials__item
   outline none
