@@ -42,6 +42,11 @@
 </nav>
       <main>
         
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.0.7/l10n/es.js"></script>
+
 <header class="homepage-hero vertical-center">
   <div id="homepage-hero-carousel" class="homepage-hero__carousel">
     <div class="homepage-hero__carousel-item cover" style="background-image: url(img/carousel/hero-1.jpg)"><div class="homepage-hero__layer"></div></div>
@@ -49,9 +54,9 @@
     <div class="homepage-hero__carousel-item cover" style="background-image: url(img/carousel/hero-3.jpg)"><div class="homepage-hero__layer"></div></div>
   </div>
   <div class="homepage-hero__inner">
-    <h1 class="homepage-hero__title">Trabaja desde la mejor ubicación de la CDMX</h1>
+    <h1 class="homepage-hero__title">Agenda tu cita y obtén un mes gratis</h1>
     <span class="homepage-hero__subtitle">Regístrate y obtén un pase de 21 Días Gratis</span>
-    <button data-remodal-target="free-day-modal" class="site-button">Pase de 21 Días Gratis</button>
+    <button data-remodal-target="work-with-us" class="site-button">Agenda tu cita</button>
   </div>
 </header>
 <section class="homepage-introduction">
@@ -136,6 +141,11 @@
       <span class="homepage-locations__item-location">Bartolache #1918 cerca de la calle José María Rico, Colonia del Valle, CDMX</span>
       <button data-remodal-target="locations-2-modal"  type="button" class="site-button">Ver fotos</button>
     </div>
+    <div class="homepage-locations__item">
+      <img class="homepage-locations__icon" src="img/icons/location.png" alt="Ubicación" />
+      <span class="homepage-locations__item-location">Periférico Blvd. Manuel Ávila Camacho 170, CDMX</span>
+      <button data-remodal-target="locations-3-modal"  type="button" class="site-button">Ver fotos</button>
+    </div>
   </div>
 </section>
 <section class="homepage-testimonials">
@@ -173,19 +183,19 @@
 <div class="remodal locations-modal" data-remodal-id="locations-modal">
   <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
   <div class="locations-carousel">
-    <img src="img/locations/workingch1.jpeg" alt="Ubicaciones" />
-    <img src="img/locations/workingch2.jpeg" alt="Ubicaciones" />
-    <img src="img/locations/workingch3.jpeg" alt="Ubicaciones" />
-    <img src="img/locations/workingch4.jpeg" alt="Ubicaciones" />
-    <img src="img/locations/workingch5.jpeg" alt="Ubicaciones" />
-    <img src="img/locations/workingch6.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/workingch1.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch2.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch3.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch4.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch5.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch6.jpg" alt="Ubicaciones" />
     <img src="img/locations/workingch7.jpg" alt="Ubicaciones" />
-    <img src="img/locations/workingch8.JPG" alt="Ubicaciones" />
-    <img src="img/locations/workingch9.JPG" alt="Ubicaciones" />
-    <img src="img/locations/workingch10.JPG" alt="Ubicaciones" />
+    <img src="img/locations/workingch8.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch9.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch10.jpg" alt="Ubicaciones" />
     <img src="img/locations/workingch11.jpg" alt="Ubicaciones" />
-    <img src="img/locations/workingch12.JPG" alt="Ubicaciones" />
-    <img src="img/locations/workingch13.JPG" alt="Ubicaciones" />
+    <img src="img/locations/workingch12.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch13.jpg" alt="Ubicaciones" />
   </div>
 </div>
 <div class="remodal locations-modal" data-remodal-id="locations-2-modal">
@@ -196,6 +206,18 @@
     <img src="img/locations/p13.jpg" alt="Ubicaciones" />
     <img src="img/locations/p14.jpg" alt="Ubicaciones" />
     <img src="img/locations/p15.jpg" alt="Ubicaciones" />
+  </div>
+</div>
+<div class="remodal locations-modal" data-remodal-id="locations-3-modal">
+  <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
+  <div class="locations-carousel">
+    <img src="img/locations/periferico-01.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-02.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-03.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-04.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-05.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-06.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-07.jpg" alt="Ubicaciones" />
   </div>
 </div>
 <div class="remodal free-day-modal" data-remodal-id="free-day-modal">
@@ -224,6 +246,82 @@
     </div>
   </form>
 </div>
+
+<div class="remodal free-day-modal" data-remodal-id="work-with-us">
+  <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
+  <h2 class="section-title free-day-modal__title">¡Trabaja con nosotros!</h2>
+  <p class="free-day-modal__description">
+    
+  </p>
+  <form id="work-with-us-form" class="contact-form" action="http://integrations.blick.mx/workinglabs/appointment/" method="post">
+    <div class="input-wrapper">
+      <div class="material-div">
+        <label class="input-label material-label" for="name-complete">Nombre completo</label>
+        <input id="name-complete" class="site-input material-input" type="text" name="completename" required>
+      </div>
+    </div>
+    <div class="inputs-row">
+      <div class="input-wrapper">
+        <div class="material-div">
+          <label class="material-label">Personas en tu equipo</label>
+          <select class="site-input site-select-input site-select-container" name="peopleteam" required>
+            <option></option>
+            <option value="1-5">1-5</option>
+            <option value="6-10">6-10</option>
+            <option value="11-15">11-15</option>
+            <option value="16-20">16-20</option>
+            <option value="+20">+20</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-wrapper">
+        <div class="material-div">
+          <label class="input-label material-label" for="phone-number">Teléfono</label>
+          <input id="phone-number" class="site-input material-input" type="text" name="telnumber" required>
+        </div>
+      </div>
+    </div>
+    <div class="inputs-row">
+      <div class="input-wrapper">
+        <div class="material-div">
+          <label class="input-label material-label" for="date">Selecciona la fecha</label>
+          <input id="date" class="date site-input material-input" type="text" name="date" required>
+        </div>
+      </div>
+      <div class="input-wrapper">
+        <div class="material-div">
+          <label class="input-label material-label" for="time">Selecciona la hora</label>
+          <input id="time" class="time site-input material-input" type="text" name="time" required>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-message"></div>
+    <div class="button-wrapper">
+      <button type="submit" name="submit" class="site-button">Enviar</button>
+    </div>
+    <div class="loader custom-loader">
+      <div class="ball-pulse-sync">
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="blue"></div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script type="text/javascript">
+  $('.date').flatpickr({
+    enableTime: false,
+    noCalendar: false,
+    locale: 'es',
+  });
+
+  $('.time').flatpickr({
+    enableTime: true,
+    noCalendar: true
+  });
+</script>
 
       </main>
       <footer class="cover">
@@ -260,7 +358,7 @@
         </div>
         <div class="footer-inner__contact-schedule">
           Horarios de atención:<br>
-          8:00 am a 6:00 pm
+          9:00 am a 6:00 pm
         </div>
       </div>
     </div>
