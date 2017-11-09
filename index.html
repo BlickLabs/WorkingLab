@@ -54,7 +54,7 @@
     <div class="homepage-hero__carousel-item cover" style="background-image: url(img/carousel/hero-3.jpg)"><div class="homepage-hero__layer"></div></div>
   </div>
   <div class="homepage-hero__inner">
-    <h1 class="homepage-hero__title">Agenda tu cita y obtén un mes gratis</h1>
+    <h1 class="homepage-hero__title homepage-hero-title-modifier">Agenda tu cita y obtén un mes gratis</h1>
     <span class="homepage-hero__subtitle">Regístrate y obtén un pase de 21 Días Gratis</span>
     <button data-remodal-target="work-with-us" class="site-button">Agenda tu cita</button>
   </div>
@@ -72,7 +72,7 @@
       <p class="homepage-free-day__text">
         Ofrece una mezcla integral de coworking con la seriedad, imagen y elegancia que quieres transmitir.
       </p>
-      <button data-remodal-target="free-day-modal" class="site-button">pase de 21 Días Gratis</button>
+      <button data-remodal-target="free-day-modal" class="site-button">Agenda tu cita</button>
     </div>
     <div class="homepage-free-day__cover cover simple-parallax"></div>
   </div>
@@ -253,7 +253,7 @@
   <p class="free-day-modal__description">
     
   </p>
-  <form id="work-with-us-form" class="contact-form" action="http://integrations.blick.mx/workinglabs/appointment/" method="post">
+  <form id="work-with-us-form" class="contact-form appointment-form-modifier" action="http://integrations.blick.mx/workinglabs/appointment/" method="post">
     <div class="input-wrapper">
       <div class="material-div">
         <label class="input-label material-label" for="name-complete">Nombre completo</label>
@@ -263,8 +263,8 @@
     <div class="inputs-row">
       <div class="input-wrapper">
         <div class="material-div">
-          <label class="material-label">Personas en tu equipo</label>
-          <select class="site-input site-select-input site-select-container" name="peopleteam" required>
+          <label class="input-label material-label" for="number-people">Personas en tu equipo</label>
+          <select id="number-people" class="site-input  material-input site-select-input site-select-container" name="peopleteam" required>
             <option></option>
             <option value="1-5">1-5</option>
             <option value="6-10">6-10</option>
@@ -297,7 +297,7 @@
     </div>
     
     <div class="form-message"></div>
-    <div class="button-wrapper">
+    <div class="button-wrapper appointment-submit-modifier">
       <button type="submit" name="submit" class="site-button">Enviar</button>
     </div>
     <div class="loader custom-loader">
