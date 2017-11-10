@@ -146,7 +146,7 @@
   margin-top remify(17)
 
 .homepage-free-day__cover
-  background-image url('../img/backgrounds/home.jpg')
+  background-image url('../img/backgrounds/parallax-home.jpg')
   width 100%
   height remify(475)
 
@@ -284,7 +284,7 @@
 .homepage-locations
   background white
   text-align center
-  padding-top 60px
+  padding-top 160px
   padding-bottom remify(90)
   simple-border('bottom', 1px, #e5e5e5)
 
@@ -384,6 +384,31 @@
     border none
     outline none
 
+
+.home-second-carousel
+  position relative
+    
+.second-slick-prev, .second-slick-next
+  background: none
+  border none
+  bottom -70px
+  color $blue
+  cursor pointer
+  font-size remify(40px)
+  margin 0 auto
+  outline none !important
+  position absolute
+  
+.second-slick-prev
+  left 0
+  right 60px
+  width: 40px
+  
+.second-slick-next
+  left 60px
+  right 0
+  width 40px
+
 .homepage-testimonials__item
   outline none
 
@@ -449,6 +474,43 @@
 
   .button-wrapper
     margin-top remify(30)
+    
+.site-select-input
+  -webkit-appearance none
+  -moz-appearance none
+  background-color #fff
+  border-left none
+  border-right none
+  border-top none
+  color #3a3a3a
+  font-family inherit
+  height 44px
+  padding 0.6em 0
+  
+.site-select-container
+  background url('../img/icons/down-arrow.png')
+  background-position right 20px center
+  background-repeat no-repeat
+  background-size 15px
+  
+.flatpickr-calendar.inline {
+  transform scale(0.8)
+}
+
+.flatpickr-current-month
+  span
+    &.cur-month
+      font-weight 500 !important
+      
+.appointment-form-modifier
+  margin-bottom 0
+  margin-top 0
+  
+.appointment-submit-modifier
+  margin-top 1.875rem !important
+  
+.homepage-hero-title-modifier
+  padding: 0 90px
 
 @media screen and (max-width: 925px)
   .homepage-testimonials__items
@@ -460,6 +522,9 @@
   .homepage-testimonials__item-content
     min-height initial
     padding-bottom remify(32)
+    
+  .homepage-hero-title-modifier
+    padding 0
 
 @media screen and (max-width: 767px)
   .homepage-services__items
