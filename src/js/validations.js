@@ -5,6 +5,11 @@
       element.closest('.input-wrapper').append(error);
     }
   });
+  $('#work-with-us-form').validate({
+    errorPlacement: function (error, element) {
+      element.closest('.input-wrapper').append(error);
+    }
+  });
   $('#contact-form, #partnership-form').validate({
     errorPlacement: function (error, element) {
       element.closest('.input-wrapper').append(error);
