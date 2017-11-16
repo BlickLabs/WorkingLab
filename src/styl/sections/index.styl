@@ -372,6 +372,37 @@
   .slick-next
     right remify(-30)
 
+  .slick-dots
+    display flex
+    justify-content center
+    position absolute
+    bottom -55px
+    left 50%
+    transform translate(-50%, 0) scale(0.5)
+    list-style none
+    padding 0
+    width 100%
+
+    li
+      margin-left 10px
+      display inline-block
+      button
+        cursor pointer
+        color transparent
+        overflow hidden
+        outline none
+        border-radius 100%
+        border none
+        background-color #898989
+        opacity 0.3
+        height 14px
+        width 14px
+        font-size 0
+    .slick-active
+      button
+        background-color $blue
+        opacity 1
+
 .homepage-testimonials__carousel,
 .locations-carousel
   .slick-prev,

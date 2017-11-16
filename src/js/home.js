@@ -11,7 +11,8 @@
   $('#homepage-testimonials-carousel, .locations-carousel').slick({
     prevArrow: '<button class="fa fa-angle-left slick-prev"></button>',
     nextArrow: '<button class="fa fa-angle-right slick-next"></button>',
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    dots: true
   });
 
   $(document).on('opening', '.locations-modal', function () {

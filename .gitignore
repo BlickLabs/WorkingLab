@@ -6,3 +6,6 @@ dist/
 .publish/
 _templates/
 
+.idea/
+
+
