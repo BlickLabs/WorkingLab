@@ -34,7 +34,7 @@
       <p class="homepage-free-day__text">
         Ofrece una mezcla integral de coworking con la seriedad, imagen y elegancia que quieres transmitir.
       </p>
-      <button data-remodal-target="free-day-modal" class="site-button">Pase de 21 días gratis</button>
+      <button data-remodal-target="free-day-modal" class="site-button">Agenda tu cita</button>
     </div>
     <div class="homepage-free-day__cover cover simple-parallax"></div>
   </div>
@@ -69,22 +69,23 @@
 </section>
 <section>
   <div id="homepage-second-carousel" class="home-second-carousel">
-    <img src="img/carousel/c1.jpg">
-    <img src="img/carousel/c2.jpg">
-    <img src="img/carousel/c3.jpg">
-    <img src="img/carousel/c4.jpg">
-    <img src="img/carousel/c5.jpg">
-    <img src="img/carousel/c6.jpg">
-    <img src="img/carousel/c7.jpg">
-    <img src="img/carousel/c8.jpg">
-    <img src="img/carousel/c9.jpg">
-    <img src="img/carousel/c10.jpg">
-    <img src="img/carousel/c11.jpg">
-    <img src="img/carousel/c13.jpg">
-    <img src="img/carousel/c14.jpg">
-    <img src="img/carousel/c15.jpg">
-    <img src="img/carousel/c16.jpg">
-    <img src="img/carousel/c17.jpg">
+      <img src="img/carousel/c18.jpg">
+      <img src="img/carousel/c17.jpg">
+      <img src="img/carousel/c16.jpg">
+      <img src="img/carousel/c15.jpg">
+      <img src="img/carousel/c14.jpg">
+      <img src="img/carousel/c13.jpg">
+      <img src="img/carousel/c11.jpg">
+      <img src="img/carousel/c10.jpg">
+      <img src="img/carousel/c9.jpg">
+      <img src="img/carousel/c8.jpg">
+      <img src="img/carousel/c7.jpg">
+      <img src="img/carousel/c6.jpg">
+      <img src="img/carousel/c5.jpg">
+      <img src="img/carousel/c4.jpg">
+      <img src="img/carousel/c3.jpg">
+      <img src="img/carousel/c2.jpg">
+      <img src="img/carousel/c1.jpg">
   </div>
 </section>
 <section class="homepage-locations">
@@ -113,9 +114,9 @@
     <div class="homepage-testimonials__item">
       <img class="homepage-testimonials__item-icon" src="img/carousel/testimonials-1.jpg" alt="Abraham, Consultoria Legal Fysa" />
       <div class="homepage-testimonials__item-content">
-        <h3 class="homepage-testimonials__item-title">Abraham, Consultoria Legal Fysa</h3>
+        <h3 class="homepage-testimonials__item-title">Alejandro, Diseño y Desarrollo Web: More Co.</h3>
         <p class="homepage-testimonials__item-text">
-          Las oficinas están Completamente equipadas, de las vistas mas claras que he visto al castillo de chapultepec, Working Chapultepec le da a mi negocio presencia y formalidad.
+            Gracias a Working Chapultepec pudimos crecer y mejorar como empresa, siempre tuvimos mucho apoyo de todas las personas que trabajan ahí. La formalidad y comodidad que nos ha brindado con nuestros clientes es excelente.
         </p>
       </div>
     </div>
@@ -273,12 +274,23 @@
   $('.date').flatpickr({
     enableTime: false,
     noCalendar: false,
-    locale: 'es'
+    locale: 'es',
+    minDate: "today",
+    "disable": [
+      function(date) {
+        // return true to disable
+        return (date.getDay() === 0);
+
+      }
+    ]
   });
 
   $('.time').flatpickr({
     enableTime: true,
-    noCalendar: true
+    noCalendar: true,
+    time_24hr: false,
+    minDate: "09:00",
+    maxDate: "19:00"
   });
 </script>
 {% endblock %}
