@@ -4,7 +4,6 @@
   var video = document.getElementById('cover-video');
 
   video.oncanplay= function () {
-    console.log('entro', video);
     setTimeout(function(){
       coverTitle[0].classList.add('title-translate');
       coverWrapper[0].classList.add('wrapper-translate');
