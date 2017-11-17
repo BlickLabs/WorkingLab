@@ -166,10 +166,8 @@
   background-image url('../img/backgrounds/parallax-home.jpg')
   width 100%
   height remify(475)
-  background-repeat no-repeat
   transform rotateY(180deg)
-  background-position top
-  background-size 100% 100%
+  background-position left
 
 .homepage-services
   background white
@@ -648,6 +646,10 @@
     font-size 13px
 
 @media screen and (max-width: 450px)
+  .home-second-carousel
+    position relative
+  .slick-dots
+    bottom -10px
 
   .homepage-hero-title-modifier
     font-size remify(34)
