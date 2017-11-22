@@ -8,11 +8,17 @@
     autoplaySpeed: 5500
   });
 
-  $('#homepage-testimonials-carousel, .locations-carousel').slick({
+  $('#homepage-testimonials-carousel').slick({
     prevArrow: '<button class="fa fa-angle-left slick-prev"></button>',
     nextArrow: '<button class="fa fa-angle-right slick-next"></button>',
     adaptiveHeight: true,
     dots: true
+  });
+
+  $('.locations-carousel').slick({
+    prevArrow: '<button class="fa fa-angle-left slick-prev"></button>',
+    nextArrow: '<button class="fa fa-angle-right slick-next"></button>',
+    adaptiveHeight: true
   });
 
   $(document).on('opening', '.locations-modal', function () {

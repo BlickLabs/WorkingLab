@@ -1,10 +1,15 @@
+.flatpickr-calendar.animate.rightMost.open.arrowBottom
+  top 50% !important
+  left 50% !important
+  right auto !important
+  transform translate(-50%, -50%) !important
+
 .homepage-hero
   height calc(95vh - 72px)
   min-height 400px
   position relative
   video
     object-fit fill
-
 
   @media screen and (orientation: portrait)
     @media screen and (min-height: 400px) and (min-width: 400px)
@@ -83,6 +88,30 @@
   -webkit-box-shadow: inset 0px 0px 1000px 1000px rgba(0,0,0,0.3);
   -moz-box-shadow: inset 0px 0px 1000px 1000px rgba(0,0,0,0.3);
   box-shadow: inset 0px 0px 1000px 1000px rgba(0,0,0,0.3);
+  display flex
+  align-items center
+  justify-content center
+#play-btn.hide
+  display none
+#play-btn
+  background-color rgba(255,255,255,0.45)
+  width 6rem
+  height 6rem
+  border-radius 50%
+  z-index 3
+  display flex
+  align-items center
+  justify-content center
+  position absolute
+  .video-cover-play
+    width 0
+    height 0
+    border-top 1rem solid transparent
+    border-left 2rem solid #272727
+    border-bottom 1rem solid transparent
+    position absolute
+    left 50%
+    transform translateX(-40%)
 
 .homepage-hero__title
   font-weight normal
@@ -109,6 +138,7 @@
   font-size remify(32)
   letter-spacing remify(0.6)
   color #525876
+  font-weight $bold
 
 .homepage-introduction__text
   center-block()
@@ -154,7 +184,7 @@
 .homepage-free-day__title
   color #414563
   font-size remify(29)
-  font-weight bold
+  font-weight $bold
 
 .homepage-free-day__text
   color #414563
@@ -437,6 +467,8 @@
 
 .home-second-carousel
   position relative
+  .slick-list
+    overflow visible !important
   .slick-dots
     position absolute
     bottom 10px
@@ -606,7 +638,7 @@
   transition top 0.5s ease
 
 .wrapper-translate
-  bottom 35%
+  bottom 30%
   transition bottom 0.5s ease
 
 @media screen and (max-width: 925px)
@@ -628,7 +660,18 @@
     padding 0
 
 @media screen and (max-width: 767px)
-
+  .homepage-hero__title
+    top 63%
+  .homepage-hero_wrapper
+    bottom 5%
+  .homepage-free-day__content
+    width remify(215)
+    padding remify(30) remify(45) remify(35) remify(25)
+  .homepage-testimonials__carousel
+    .slick-prev
+      left -6rem !important
+    .slick-next
+      right -1.65em!important
   video
     object-fit cover !important
 
@@ -646,10 +689,21 @@
     font-size 13px
 
 @media screen and (max-width: 450px)
+  .homepage-locations
+    padding-top 0
+
   .home-second-carousel
-    position relative
-  .slick-dots
-    bottom -10px !important
+    margin-bottom 150px
+    img
+      height 150px
+    .slick-dots
+      bottom -3.5em !important
+      opacity 1
+      //background-color #0b6bc1
+      button
+        background-color #000 !important
+        opacity 0.4
+        z-index 4
 
   .homepage-hero-title-modifier
     font-size remify(34)
@@ -660,6 +714,11 @@
   .homepage-free-day
     padding 0
 
+  .homepage-free-day__content
+    width remify(230)
+    padding remify(30) remify(45) remify(35) remify(25)
+
   .homepage-free-day__inner
     width 100%
     padding-left 30%
+
