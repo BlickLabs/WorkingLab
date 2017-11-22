@@ -1,11 +1,15 @@
+.flatpickr-calendar.animate.rightMost.open.arrowBottom
+  top 50% !important
+  left 50% !important
+  right auto !important
+  transform translate(-50%, -50%) !important
+
 .homepage-hero
   height calc(95vh - 72px)
   min-height 400px
   position relative
   video
     object-fit fill
-
-
 
   @media screen and (orientation: portrait)
     @media screen and (min-height: 400px) and (min-width: 400px)
@@ -463,6 +467,8 @@
 
 .home-second-carousel
   position relative
+  .slick-list
+    overflow visible !important
   .slick-dots
     position absolute
     bottom 10px
@@ -632,7 +638,7 @@
   transition top 0.5s ease
 
 .wrapper-translate
-  bottom 35%
+  bottom 30%
   transition bottom 0.5s ease
 
 @media screen and (max-width: 925px)
@@ -657,15 +663,15 @@
   .homepage-hero__title
     top 63%
   .homepage-hero_wrapper
-    bottom 8%
+    bottom 5%
   .homepage-free-day__content
     width remify(215)
     padding remify(30) remify(45) remify(35) remify(25)
   .homepage-testimonials__carousel
     .slick-prev
-      left -2.5rem !important
+      left -6rem !important
     .slick-next
-      right -2.5rem !important
+      right -1.65em!important
   video
     object-fit cover !important
 
@@ -683,10 +689,21 @@
     font-size 13px
 
 @media screen and (max-width: 450px)
+  .homepage-locations
+    padding-top 0
+
   .home-second-carousel
-    position relative
+    margin-bottom 150px
+    img
+      height 150px
     .slick-dots
-      bottom -10px !important
+      bottom -3.5em !important
+      opacity 1
+      //background-color #0b6bc1
+      button
+        background-color #000 !important
+        opacity 0.4
+        z-index 4
 
   .homepage-hero-title-modifier
     font-size remify(34)
@@ -698,9 +715,10 @@
     padding 0
 
   .homepage-free-day__content
-    width remify(215)
+    width remify(230)
     padding remify(30) remify(45) remify(35) remify(25)
 
   .homepage-free-day__inner
     width 100%
     padding-left 30%
+
