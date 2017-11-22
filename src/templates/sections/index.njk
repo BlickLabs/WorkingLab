@@ -12,12 +12,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.0.7/l10n/es.js"></script>
 
 <header class="homepage-hero vertical-center">
-  <video id="cover-video" width="100%"  height="100%" poster="img/backgrounds/hero.jpg" loop>
+  <video id="video" width="100%"  height="100%" poster="img/backgrounds/hero.jpg" autoplay loop>
     <source src="img/video/cover-video.mp4" type="video/mp4">
   </video>
   <div class="homepage-hero__video-cover"></div>
   <div id="play-btn" class="hide">
-      <div class="video-cover-play"></div>
+      <div id="video-cover" class="video-cover-play"></div>
   </div>
   <div class="homepage-hero__inner">
     <h1 class="homepage-hero__title homepage-hero-title-modifier">Trabaja desde la mejor ubicación de la CDMX</h1>
@@ -40,7 +40,7 @@
       <p class="homepage-free-day__text">
         Ofrece una mezcla integral de coworking con la seriedad, imagen y elegancia que quieres transmitir.
       </p>
-      <button data-remodal-target="free-day-modal" class="site-button">Agenda tu cita</button>
+      <button data-remodal-target="work-with-us" class="site-button">Agenda tu cita</button>
     </div>
     <div class="homepage-free-day__cover cover simple-parallax"></div>
   </div>
@@ -216,9 +216,6 @@
 <div class="remodal free-day-modal" data-remodal-id="work-with-us">
   <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
   <h2 class="section-title free-day-modal__title">¡Trabaja con nosotros!</h2>
-  <p class="free-day-modal__description">
-    
-  </p>
   <form id="work-with-us-form" class="contact-form appointment-form-modifier" action="http://integrations.blick.mx/workinglabs/appointment/" method="post">
     <div class="input-wrapper">
       <div class="material-div">
@@ -285,7 +282,7 @@
     "disable": [
       function(date) {
         // return true to disable
-        return (date.getDay() === 0);
+        return (date.getDay() === 0 || date.getDay() === 6);
 
       }
     ]
