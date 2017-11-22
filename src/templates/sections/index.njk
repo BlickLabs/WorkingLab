@@ -258,7 +258,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="form-message"></div>
     <div class="button-wrapper appointment-submit-modifier">
       <button type="submit" name="submit" class="site-button">Enviar</button>
@@ -287,7 +287,6 @@
       }
     ]
   });
-
   $('.time').flatpickr({
     enableTime: true,
     noCalendar: true,
@@ -295,5 +294,12 @@
     minDate: "09:00",
     maxDate: "19:00"
   });
+  if(screen.width < 767){
+    $('.time').flatpickr({
+      enableTime: true,
+      noCalendar: true,
+      time_24hr: false
+    });
+  }
 </script>
 {% endblock %}
