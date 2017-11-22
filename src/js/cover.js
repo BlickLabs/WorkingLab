@@ -43,6 +43,5 @@
     video.paused = function () {
       play.classList.remove('hide');
     };
-  }
-  ;
+  };
 })();
