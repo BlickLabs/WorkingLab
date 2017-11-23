@@ -115,13 +115,11 @@
   transition top 0.5s ease
 
 .homepage-hero__subtitle
-  display block
-  margin-top remify(72)
   font-size remify(20)
 
 .homepage-introduction
   background white
-  padding remify(26) 0 remify(23) 0
+  padding 0
   text-align center
 
 .homepage-introduction__icon
@@ -654,8 +652,11 @@
     padding 0
 
 @media screen and (max-width: 767px)
+  .homepage-introduction__text
+    padding 0 remify(40)
   .homepage-hero__title
     top 63%
+    position relative
   .homepage-hero_wrapper
     bottom 5%
   .homepage-free-day__content
