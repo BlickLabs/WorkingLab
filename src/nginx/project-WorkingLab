@@ -3,7 +3,7 @@ server {
     listen 80;
     listen [::]:80;
 
-    root /home/static/project-iidea;
+    root /home/static/WorkingLab;
     index index.html index.htm;
 
     server_name workingch.com;
