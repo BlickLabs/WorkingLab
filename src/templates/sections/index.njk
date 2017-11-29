@@ -196,7 +196,7 @@
     <div class="input-wrapper">
       <div class="material-div">
         <label class="input-label material-label" for="free-day-email">Correo electrónico</label>
-        <input id="free-day-email" class="site-input material-input" type="email" name="email" required>
+        <input id="free-day-email" class="site-input material-input" type="email" name="email">
       </div>
     </div>
     <div class="form-message"></div>
@@ -218,16 +218,17 @@
   <h2 class="section-title free-day-modal__title">Agenda tu cita y conoce tu próxima oficina</h2>
   <form id="work-with-us-form" name="work-with-us-form" class="contact-form appointment-form-modifier">
     <div class="input-wrapper">
-      <div class="material-div">
+      <div class="material-div us-input-wrapper">
         <label class="input-label material-label" for="name-complete">Nombre completo</label>
-        <input id="name-complete" class="site-input material-input" type="text" name="completename" required>
+        <input id="name-complete" class="site-input material-input" type="text" name="completename">
+        {#<span class="input-error">Completa este campo</span>#}
       </div>
     </div>
     <div class="inputs-row">
       <div class="input-wrapper">
-        <div class="material-div">
+        <div class="material-div us-input-wrapper">
           <label class="input-label material-label" for="number-people">Personas en tu equipo</label>
-          <select id="number-people" class="site-input  material-input site-select-input site-select-container" name="peopleteam" required>
+          <select id="number-people" class="site-input  material-input site-select-input site-select-container" name="peopleteam">
             <option></option>
             <option value="1-5">1-5</option>
             <option value="6-10">6-10</option>
@@ -238,27 +239,26 @@
         </div>
       </div>
       <div class="input-wrapper">
-        <div class="material-div">
+        <div class="material-div us-input-wrapper">
           <label class="input-label material-label" for="phone-number">Teléfono</label>
-          <input id="phone-number" class="site-input material-input" type="text" name="telnumber" required>
+          <input id="phone-number" class="site-input material-input" type="text" name="telnumber">
         </div>
       </div>
     </div>
     <div class="inputs-row">
       <div class="input-wrapper">
-        <div class="material-div">
+        <div class="material-div us-input-wrapper">
           <label class="input-label material-label" for="date">Selecciona la fecha</label>
-          <input id="date" class="date site-input material-input" type="text" name="date" required>
+          <input id="date" class="date site-input material-input" type="text" name="date">
         </div>
       </div>
       <div class="input-wrapper">
-        <div class="material-div">
+        <div class="material-div us-input-wrapper">
           <label class="input-label material-label" for="time">Selecciona la hora</label>
-          <input id="time" class="time site-input material-input" type="text" name="time" required>
+          <input id="time" class="time site-input material-input" type="text" name="time">
         </div>
       </div>
     </div>
-
     <div class="form-message"></div>
     <div class="button-wrapper appointment-submit-modifier">
       <button type="submit" name="submit" class="site-button">Enviar</button>
