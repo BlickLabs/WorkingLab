@@ -15,33 +15,19 @@
         }, 21000);
       }, 7500);
     };
-  } else if (screen.width < 767 && video) {
+  } else if (screen.width < 930 && video) {
     play.classList.remove('hide');
     video.removeAttribute('autoplay');
     video.removeAttribute('loop');
     video.oncanplay = function () {
-      play.addEventListener('touchstart', function () {
-        video.play();
-        play.classList.add('hide');
-      });
-      playCover.addEventListener('touchstart', function () {
-        video.play();
-        play.classList.add('hide');
-      });
-      play.addEventListener('click', function () {
-        video.play();
-        play.classList.add('hide');
-      });
-      playCover.addEventListener('click', function () {
-        video.play();
-        play.classList.add('hide');
+      play.classList.add('show');
+      document.getElementById('homepage-header').addEventListener('touchstart', function (ev) {
+        ev.preventDefault();
+        if(ev.target === play || ev.target === playCover) {
+          video.play();
+          play.classList.remove('show');
+        }
       });
     };
-    video.onended = function () {
-      play.classList.remove('hide');
-    };
-    video.paused = function () {
-      play.classList.remove('hide');
-    };
-  };
+  }
 })();
