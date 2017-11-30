@@ -1,10 +1,10 @@
 (function () {
   $('#homepage-newsletter').validate();
-  $('#free-day-form').validate({
+  /*$('#free-day-form').validate({
     errorPlacement: function (error, element) {
       element.closest('.input-wrapper').append(error);
     }
-  });
+  });*/
   $('#work-with-us-form').validate({
     errorPlacement: function (error, element) {
       element.closest('.input-wrapper').append(error);
