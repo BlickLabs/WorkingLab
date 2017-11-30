@@ -4,7 +4,7 @@
   var video = document.getElementById('video');
   var play = document.getElementById('play-btn');
   var playCover = document.getElementById('video-cover');
-  if (screen.width > 767) {
+  if (screen.width > 767 && video) {
     video.oncanplay = function () {
       setTimeout(function () {
         coverTitle[0].classList.add('title-translate');
@@ -15,7 +15,7 @@
         }, 21000);
       }, 7500);
     };
-  } else if (screen.width < 767) {
+  } else if (screen.width < 767 && video) {
     play.classList.remove('hide');
     video.removeAttribute('autoplay');
     video.removeAttribute('loop');
