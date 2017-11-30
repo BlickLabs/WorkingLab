@@ -228,32 +228,7 @@
     <img src="img/locations/periferico-07.jpg" alt="Ubicaciones" />
   </div>
 </div>
-<div class="remodal free-day-modal" data-remodal-id="free-day-modal">
-  <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
-  <h2 class="section-title free-day-modal__title">¡Trabaja con nosotros!</h2>
-  <p class="free-day-modal__description">
-    Déjanos tu correo para regalarte un pase de 21 días.
-  </p>
-  <form id="free-day-form" class="free-day-modal__form" action="http://integrations.blick.mx/workinglabs/free/" method="post">
-    <div class="input-wrapper">
-      <div class="material-div">
-        <label class="input-label material-label" for="free-day-email">Correo electrónico</label>
-        <input id="free-day-email" class="site-input material-input" type="email" name="email" required>
-      </div>
-    </div>
-    <div class="form-message"></div>
-    <div class="button-wrapper">
-      <button type="submit" name="submit" class="site-button">Enviar</button>
-    </div>
-    <div class="loader custom-loader">
-      <div class="ball-pulse-sync">
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
-      </div>
-    </div>
-  </form>
-</div>
+
 
 <div class="remodal free-day-modal" data-remodal-id="work-with-us">
   <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
@@ -296,7 +271,7 @@
       <div class="input-wrapper">
         <div class="material-div">
           <label class="input-label material-label" for="time">Selecciona la hora</label>
-          <input id="time" class="time site-input material-input" type="text" name="time" required>
+          <input id="time" class="time site-input material-input" type="time" name="time" required>
         </div>
       </div>
     </div>
@@ -329,20 +304,18 @@
       }
     ]
   });
-  $('.time').flatpickr({
-    enableTime: true,
-    noCalendar: true,
-    time_24hr: false,
-    minDate: "09:00",
-    maxDate: "19:00"
-  });
   if(screen.width < 767){
+    //TODO remove the condition and only apply in desktop
+  } else {
     $('.time').flatpickr({
       enableTime: true,
       noCalendar: true,
-      time_24hr: false
+      time_24hr: false,
+      minDate: "09:00",
+      maxDate: "19:00"
     });
   }
+
 </script>
 
       </main>
