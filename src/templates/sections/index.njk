@@ -254,7 +254,7 @@
       <div class="input-wrapper">
         <div class="material-div">
           <label class="input-label material-label" for="time">Selecciona la hora</label>
-          <input id="time" class="time site-input material-input" type="text" name="time" required>
+          <input id="time" class="time site-input material-input" type="time" name="time" required>
         </div>
       </div>
     </div>
@@ -287,19 +287,17 @@
       }
     ]
   });
-  $('.time').flatpickr({
-    enableTime: true,
-    noCalendar: true,
-    time_24hr: false,
-    minDate: "09:00",
-    maxDate: "19:00"
-  });
   if(screen.width < 767){
+    //TODO remove the condition and only apply in desktop
+  } else {
     $('.time').flatpickr({
       enableTime: true,
       noCalendar: true,
-      time_24hr: false
+      time_24hr: false,
+      minDate: "09:00",
+      maxDate: "19:00"
     });
   }
+
 </script>
 {% endblock %}
