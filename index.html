@@ -49,9 +49,11 @@
         
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.1/dist/jquery.fancybox.min.css" />
 
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.0.7/l10n/es.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.1/dist/jquery.fancybox.min.js"></script>
 
 <header id="homepage-header" class="homepage-hero vertical-center">
   <video id="video" width="100%"  height="100%" poster="img/backgrounds/hero.jpg" autoplay loop muted>
@@ -142,7 +144,9 @@
     <div class="homepage-locations__item">
       <img class="homepage-locations__icon" src="img/icons/location.png" alt="Ubicación" />
       <span class="homepage-locations__item-location">Av Chapultepec 480, Roma Norte, CDMX</span>
-      <button data-remodal-target="locations-modal"  type="button" class="site-button">Ver fotos</button>
+      <a data-fancybox="gallery" href="#working-chapultepec">
+        <button data-remodal-target="locations-modal"  type="button" class="site-button">Ver fotos</button>
+      </a>
     </div>
     <div class="homepage-locations__item">
       <img class="homepage-locations__icon" src="img/icons/location.png" alt="Ubicación" />
@@ -188,24 +192,54 @@
     </div>
   </div>
 </section>
-<div class="remodal locations-modal" data-remodal-id="locations-modal">
-  <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
-    <div class="locations-carousel">
-    <img class="homepage-locations-img" src="img/locations/workingch1.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch2.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch3.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch4.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch5.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch6.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch7.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch8.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch9.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch10.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch11.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch12.jpg" alt="Ubicaciones" />
-    <img class="homepage-locations-img" src="img/locations/workingch13.jpg" alt="Ubicaciones" />
+<div>
+  <div class="locations-carousel" id="working-chapultepec">
+    <img src="img/locations/workingch1.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch2.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch3.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch4.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch5.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch6.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch7.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch8.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch9.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch10.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch11.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch12.jpg" alt="Ubicaciones" />
+    <img src="img/locations/workingch13.jpg" alt="Ubicaciones" />
   </div>
 </div>
+<!-- <div class="remodal locations-modal" data-remodal-id="locations-2-modal">
+  <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
+  <div class="locations-carousel">
+    <img src="img/locations/puebla23-1.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-2.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-3.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-4.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-5.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-6.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-7.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-8.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-9.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-10.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-11.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-12.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-13.jpeg" alt="Ubicaciones" />
+    <img src="img/locations/puebla23-14.jpeg" alt="Ubicaciones" />
+  </div>
+</div>
+<div class="remodal locations-modal" data-remodal-id="locations-3-modal">
+  <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
+  <div class="locations-carousel">
+    <img src="img/locations/periferico-01.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-02.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-03.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-04.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-05.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-06.jpg" alt="Ubicaciones" />
+    <img src="img/locations/periferico-07.jpg" alt="Ubicaciones" />
+  </div>
+</div> -->
 
 
 <div class="remodal free-day-modal" data-remodal-id="work-with-us">
