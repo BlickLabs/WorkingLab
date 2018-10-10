@@ -100,17 +100,23 @@
     <div class="homepage-locations__item">
       <img class="homepage-locations__icon" src="img/icons/location.png" alt="Ubicación" />
       <span class="homepage-locations__item-location">Av Chapultepec 480, Roma Norte, CDMX</span>
-      <button data-remodal-target="locations-modal"  type="button" class="site-button">Ver fotos</button>
+      <a href="#location-chapultepec" data-modal>
+        <button data-remodal-target="locations-modal"  type="button" class="site-button">Ver fotos</button>
+      </a>
     </div>
     <div class="homepage-locations__item">
       <img class="homepage-locations__icon" src="img/icons/location.png" alt="Ubicación" />
       <span class="homepage-locations__item-location">Puebla 237 Col. Roma Norte. Delegación Cuauhtémoc CP. 06700, CDMX. Entre las calles Medellín y Av. Chapultepec.</span>
-      <button data-remodal-target="locations-2-modal"  type="button" class="site-button">Ver fotos</button>
+      <a href="#location-puebla" data-modal>
+        <button data-remodal-target="locations-2-modal"  type="button" class="site-button">Ver fotos</button>
+      </a>
     </div>
     <div class="homepage-locations__item">
       <img class="homepage-locations__icon" src="img/icons/location.png" alt="Ubicación" />
       <span class="homepage-locations__item-location">Periférico Blvd. Manuel Ávila Camacho 170, CDMX</span>
-      <button data-remodal-target="locations-3-modal"  type="button" class="site-button">Ver fotos</button>
+      <a href="#location-periferico" data-modal>
+        <button data-remodal-target="locations-3-modal"  type="button" class="site-button">Ver fotos</button>
+      </a>
     </div>
   </div>
 </section>
@@ -146,9 +152,8 @@
     </div>
   </div>
 </section>
-<div class="remodal locations-modal" data-remodal-id="locations-modal">
-  <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
-  <div class="locations-carousel">
+<div id="location-chapultepec" class="our-location-modal modal">
+  <div class="our-location-carousel owl-carousel">
     <img src="img/locations/workingch1.jpg" alt="Ubicaciones" />
     <img src="img/locations/workingch2.jpg" alt="Ubicaciones" />
     <img src="img/locations/workingch3.jpg" alt="Ubicaciones" />
@@ -164,9 +169,8 @@
     <img src="img/locations/workingch13.jpg" alt="Ubicaciones" />
   </div>
 </div>
-<div class="remodal locations-modal" data-remodal-id="locations-2-modal">
-  <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
-  <div class="locations-carousel">
+<div id="location-puebla" class="our-location-modal modal">
+  <div class="our-location-carousel owl-carousel">
     <img src="img/locations/puebla23-1.jpeg" alt="Ubicaciones" />
     <img src="img/locations/puebla23-2.jpeg" alt="Ubicaciones" />
     <img src="img/locations/puebla23-3.jpeg" alt="Ubicaciones" />
@@ -183,9 +187,8 @@
     <img src="img/locations/puebla23-14.jpeg" alt="Ubicaciones" />
   </div>
 </div>
-<div class="remodal locations-modal" data-remodal-id="locations-3-modal">
-  <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
-  <div class="locations-carousel">
+<div id="location-periferico" class="our-location-modal modal">
+  <div class="our-location-carousel owl-carousel">
     <img src="img/locations/periferico-01.jpg" alt="Ubicaciones" />
     <img src="img/locations/periferico-02.jpg" alt="Ubicaciones" />
     <img src="img/locations/periferico-03.jpg" alt="Ubicaciones" />
