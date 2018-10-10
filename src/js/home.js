@@ -14,14 +14,22 @@
     adaptiveHeight: true,
     dots: true
   });
-
-  $('.locations-carousel').slick({
-    prevArrow: '<button class="fa fa-angle-left slick-prev"></button>',
-    nextArrow: '<button class="fa fa-angle-right slick-next"></button>',
-    adaptiveHeight: true
-  });
-
-  $(document).on('opening', '.locations-modal', function () {
-    $(this).children('.locations-carousel').slick('resize');
-  });
 })();
+
+var homeLocationsCarousel = $('.our-location-carousel');
+
+homeLocationsCarousel.owlCarousel ({
+ loop: false,
+ nav: true,
+ dots: false,
+ margin: 20,
+ items: 1,
+ autoHeight: true
+});
+
+$(function(){
+ $('a[data-modal]').click(function(event) {
+   $(this).modal();
+   return false;
+ });
+});
