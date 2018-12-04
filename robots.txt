@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: http://sandbox.more-co.getmore.mx/
+Sitemap: https://getmore.mx/sitemap.xml
