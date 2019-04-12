@@ -1,11 +1,14 @@
 {% extends "partials/base.njk" %}
 
-{% block meta %}
-{% endblock %}
+{% block title %}Servicios{% endblock %}
 
-{% block title %}
-Servicios
-{% endblock %}
+{% set meta_description = "Conoce nuestros servicios." %}
+{% set og_url = "http://workingch.com/servicios.html" %}
+{% set og_title = "Servicios | Working Chapultepec" %}
+{% set og_description = "Conoce nuestros servicios." %}
+{% set og_img = "http://workingch.com/img/seo/servicios-seo.jpg" %}
+{% set og_img_width = "2546" %}
+{% set og_img_height = "1210" %}
 
 {% block content %}
 <h1 class="section-title main-title">Servicios</h1>
@@ -19,8 +22,8 @@ Servicios
     <span class="services__item-text">Acceso a Roof Garden</span>
   </article>
   <article class="services__item">
-    <img class="services__item-icon" src="img/icons/file.png" alt="Domicilio fiscal" />
-    <span class="services__item-text">Domicilio fiscal</span>
+    <img class="services__item-icon" src="img/icons/file.png" alt="Roof para eventos" />
+    <span class="services__item-text">Roof para eventos</span>
   </article>
   <article class="services__item">
     <img class="services__item-icon" src="img/icons/clock.png" alt="Acceso al edificio 24/7" />

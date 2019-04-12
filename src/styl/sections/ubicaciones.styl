@@ -1,0 +1,236 @@
+.locations
+  margin-bottom 76px
+
+  &-cover
+    background-image url("../img/locations/ubicaciones-cover.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    height 530px
+    padding-top 132px
+
+    &-card
+      background-color #ffffff
+      margin 0 3.8vw 0 3.8vw
+      padding-top 59px
+
+  &-content
+    display flex
+    justify-content space-between
+    margin 0 auto
+    width 1011px
+
+  &-title
+    color #4d5473
+    font-size 36px
+    font-weight bold
+    margin-bottom 65px
+    text-align center
+
+  &-subtitle
+    color #4d5473
+    font-size 24px
+
+  &-desc
+    color #9b9b9b
+    font-size 15px
+    letter-spacing -0.3px
+    line-height 22px
+
+  &-pin
+    align-items center
+    color #0086ff
+    display flex
+    font-size 12px
+    letter-spacing 0.04px
+
+    img
+      height 18px
+      margin-right 7px
+      width 14px
+
+  &-info
+    &-container
+      max-width 279px
+
+  &-carousel
+    &-img
+      height 278px
+      width 652px !important
+
+      background-position center
+      background-repeat no-repeat
+      background-size cover
+
+      &.chapultepec
+        &-1
+          background-image url("../img/locations/workingch1.jpg")
+
+        &-2
+          background-image url("../img/locations/workingch2.jpg")
+
+        &-3
+          background-image url("../img/locations/workingch3.jpg")
+
+        &-4
+          background-image url("../img/locations/workingch4.jpg")
+
+        &-5
+          background-image url("../img/locations/workingch5.jpg")
+
+        &-6
+          background-image url("../img/locations/workingch6.jpg")
+
+        &-7
+          background-image url("../img/locations/workingch7.jpg")
+
+        &-8
+          background-image url("../img/locations/workingch8.jpg")
+
+        &-9
+          background-image url("../img/locations/workingch9.jpg")
+
+        &-10
+          background-image url("../img/locations/workingch10.jpg")
+
+        &-11
+          background-image url("../img/locations/workingch11.jpg")
+
+        &-12
+          background-image url("../img/locations/workingch12.jpg")
+
+        &-13
+          background-image url("../img/locations/workingch13.jpg")
+
+      &.cibeles
+        &-1
+          background-image url("../img/locations/puebla23-1.jpeg")
+
+        &-2
+          background-image url("../img/locations/puebla23-3.jpeg")
+
+        &-3
+          background-image url("../img/locations/puebla23-4.jpeg")
+
+        &-4
+          background-image url("../img/locations/puebla23-5.jpeg")
+
+        &-5
+          background-image url("../img/locations/puebla23-6.jpeg")
+
+        &-6
+          background-image url("../img/locations/puebla23-7.jpeg")
+
+        &-7
+          background-image url("../img/locations/puebla23-8.jpeg")
+
+        &-8
+          background-image url("../img/locations/puebla23-9.jpeg")
+
+        &-9
+          background-image url("../img/locations/puebla23-10.jpeg")
+
+        &-10
+          background-image url("../img/locations/puebla23-11.jpeg")
+
+        &-11
+          background-image url("../img/locations/puebla23-12.jpeg")
+
+        &-12
+          background-image url("../img/locations/puebla23-13.jpeg")
+
+        &-13
+          background-image url("../img/locations/puebla23-14.jpeg")
+
+  &-cibeles
+    margin 157px 0 97px 0
+
+  &-periferico
+    display flex
+    justify-content center
+
+  &-cibeles,
+  &-periferico
+    .locations-pin
+      align-items flex-start
+
+.chapultepec-carousel
+  position relative
+  width 652px
+
+  & .owl-nav,
+  & .owl-dots
+    display flex !important
+
+  & .owl-dots
+    bottom 19px
+    justify-content center
+    position absolute
+    width 100%
+
+  & .locations-carousel-arrow
+    height 22px
+    width 12px
+
+  & .owl-prev,
+  & .owl-next
+    bottom 0
+    position absolute
+    top 0
+
+  & .owl-prev
+    left 28px
+
+  & .owl-next
+    right 28px
+
+  & .owl-dot
+    background-color #ffffff !important
+    border-radius 100px
+    height 8px
+    margin 0 8px
+    opacity 0.4
+    width 8px
+
+  & .owl-dot.active
+    opacity 1
+
+@media screen and (max-width 1180px)
+  .locations
+    &-content
+      align-items center
+      flex-direction column
+      width auto
+
+    &-cibeles
+      margin-top 410px
+
+      .locations-content
+        flex-direction column-reverse 
+
+    &-info
+      &-container
+        margin-bottom 40px
+
+@media screen and (max-width 720px)
+  .locations
+    &-cibeles
+      margin-left 3.8vw
+      margin-right 3.8vw
+
+    &-carousel
+      &-img
+        width 100vw !important
+
+  .chapultepec-carousel
+    width 100%
+
+@media screen and (max-width 480px)
+  .locations
+    &-cover
+      &-card
+        margin 0
+
+    &-cibeles
+      margin-left 0
+      margin-right 0

@@ -1,7 +1,14 @@
 {% extends "partials/base.njk" %}
 
-{% block meta %}
-{% endblock %}
+{% block title %}Trabaja desde la mejor ubicación de la CDMX{% endblock %}
+
+{% set meta_description = "Ofrecemos una mezcla integral de coworking con la seriedad, imagen y elegancia que quieres transmitir." %}
+{% set og_url = "http://workingch.com/" %}
+{% set og_title = "Trabaja desde la mejor ubicación de la CDMX | Working Chapultepec" %}
+{% set og_description = "Ofrecemos una mezcla integral de coworking con la seriedad, imagen y elegancia que quieres transmitir." %}
+{% set og_img = "http://workingch.com/img/seo/homepage-seo.jpg" %}
+{% set og_img_width = "2546" %}
+{% set og_img_height = "1210" %}
 
 {% block content %}
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
@@ -30,7 +37,7 @@
 <section class="homepage-introduction">
   <h2 class="homepage-introduction__title">Working Chapultepec</h2>
   <p class="homepage-introduction__text">
-    Trabaja en el piso más alto de Av. Chapultepec con las vistas más claras al Castillo de Chapultepec y Paseo de la Reforma
+    ¿Por qué elegir entre pagar más o tener menos espacio en tu oficina? Cuando tienes una opción que valora tu presupuesto, lo maximiza y te da la mejor Oficina del mercado al mejor precio
   </p>
 </section>
 <section class="homepage-free-day">
@@ -75,23 +82,23 @@
 </section>
 <section>
   <div id="homepage-second-carousel" class="home-second-carousel">
-      <img src="img/carousel/c1.jpg">
-      <img src="img/carousel/c2.jpg">
-      <img src="img/carousel/c3.jpg">
-      <img src="img/carousel/c4.jpg">
-      <img src="img/carousel/c5.jpg">
-      <img src="img/carousel/c6.jpg">
-      <img src="img/carousel/c7.jpg">
-      <img src="img/carousel/c8.jpg">
-      <img src="img/carousel/c9.jpg">
-      <img src="img/carousel/c10.jpg">
-      <img src="img/carousel/c11.jpg">
-      <img src="img/carousel/c12.jpg">
-      <img src="img/carousel/c13.jpg">
-      <img src="img/carousel/c14.jpg">
-      <img src="img/carousel/c15.jpg">
-      <img src="img/carousel/c16.jpg">
-      <img src="img/carousel/c17.jpg">
+      <img src="img/carousel/c1.jpg" alt="Imagen de carrusel 1">
+      <img src="img/carousel/c2.jpg" alt="Imagen de carrusel 2">
+      <img src="img/carousel/c3.jpg" alt="Imagen de carrusel 3">
+      <img src="img/carousel/c4.jpg" alt="Imagen de carrusel 4">
+      <img src="img/carousel/c5.jpg" alt="Imagen de carrusel 5">
+      <img src="img/carousel/c6.jpg" alt="Imagen de carrusel 6">
+      <img src="img/carousel/c7.jpg" alt="Imagen de carrusel 7">
+      <img src="img/carousel/c8.jpg" alt="Imagen de carrusel 8">
+      <img src="img/carousel/c9.jpg" alt="Imagen de carrusel 9">
+      <img src="img/carousel/c10.jpg" alt="Imagen de carrusel 10">
+      <img src="img/carousel/c11.jpg" alt="Imagen de carrusel 11">
+      <img src="img/carousel/c12.jpg" alt="Imagen de carrusel 12">
+      <img src="img/carousel/c13.jpg" alt="Imagen de carrusel 13">
+      <img src="img/carousel/c14.jpg" alt="Imagen de carrusel 14">
+      <img src="img/carousel/c15.jpg" alt="Imagen de carrusel 15">
+      <img src="img/carousel/c16.jpg" alt="Imagen de carrusel 16">
+      <img src="img/carousel/c17.jpg" alt="Imagen de carrusel 17">
   </div>
 </section>
 <section class="homepage-locations" id="ubicaciones">
@@ -101,24 +108,24 @@
       <h3 class="homepage-locations__subtitle">working chapultepec</h3>
       <img class="homepage-locations__icon" src="img/icons/location.png" alt="Ubicación" />
       <span class="homepage-locations__item-location">Av Chapultepec 480, Roma Norte, CDMX</span>
-      <a href="#location-chapultepec" data-modal>
-        <button data-remodal-target="locations-modal"  type="button" class="site-button">Ver fotos</button>
-      </a>
-    </div>
-    <div class="homepage-locations__item">
-        <h3 class="homepage-locations__subtitle">working puebla</h3>
-      <img class="homepage-locations__icon" src="img/icons/location.png" alt="Ubicación" />
-      <span class="homepage-locations__item-location">Puebla 237 Col. Roma Norte. Delegación Cuauhtémoc CP. 06700, CDMX.</span>
-      <a href="puebla.html">
+      <a href="ubicaciones.html">
         <button type="button" class="site-button">Ver más</button>
       </a>
     </div>
     <div class="homepage-locations__item">
-        <h3 class="homepage-locations__subtitle">working periférico</h3>
+        <h3 class="homepage-locations__subtitle">working cibeles</h3>
+      <img class="homepage-locations__icon" src="img/icons/location.png" alt="Ubicación" />
+      <span class="homepage-locations__item-location">Puebla 237 Col. Roma Norte. Delegación Cuauhtémoc CP. 06700, CDMX.</span>
+      <a href="ubicaciones.html">
+        <button type="button" class="site-button">Ver más</button>
+      </a>
+    </div>
+    <div class="homepage-locations__item">
+        <h3 class="homepage-locations__subtitle">working Lomas</h3>
       <img class="homepage-locations__icon" src="img/icons/location.png" alt="Ubicación" />
       <span class="homepage-locations__item-location">Periférico Blvd. Manuel Ávila Camacho 170, CDMX</span>
-      <a href="#location-periferico" data-modal>
-        <button data-remodal-target="locations-3-modal"  type="button" class="site-button">Ver fotos</button>
+      <a href="ubicaciones.html">
+        <button type="button" class="site-button">Ver más</button>
       </a>
     </div>
   </div>
@@ -127,11 +134,20 @@
   <h2 class="homepage-testimonials__title">Testimoniales</h2>
   <div id="homepage-testimonials-carousel" class="homepage-testimonials__carousel">
     <div class="homepage-testimonials__item">
-      <img class="homepage-testimonials__item-icon" src="img/carousel/testimonials-1.jpg" alt="Abraham, Consultoria Legal Fysa" />
+      <img class="homepage-testimonials__item-icon" src="img/carousel/erick-buendia.jpeg" alt="Erick Buendía, Coordinador de Recursos Humanos" />
       <div class="homepage-testimonials__item-content">
-        <h3 class="homepage-testimonials__item-title">Alejandro, Diseño y Desarrollo Web: More Co.</h3>
+        <h3 class="homepage-testimonials__item-title">Erick Buendía, Coordinador de Recursos Humanos</h3>
         <p class="homepage-testimonials__item-text">
-            Gracias a Working Chapultepec pudimos crecer y mejorar como empresa, siempre tuvimos mucho apoyo de todas las personas que trabajan ahí. La formalidad y comodidad que nos ha brindado con nuestros clientes es excelente.
+          Pude experimentar con Working Chapultepec, una excelente atención al cliente desde el primer contacto, la atención, el servicio de oficinas, la amabilidad de todos sus colaboradores. Agradezco todo lo que han hecho por mi empresa y mis compañeros.
+        </p>
+      </div>
+    </div>
+    <div class="homepage-testimonials__item">
+      <img class="homepage-testimonials__item-icon" src="img/carousel/jennyfer-soto.jpeg" alt="Erick Buendía, Coordinador de Recursos Humanos" />
+      <div class="homepage-testimonials__item-content">
+        <h3 class="homepage-testimonials__item-title">Jennyfer Soto, Coordinador de Desarrollo Organizacional y Marketing</h3>
+        <p class="homepage-testimonials__item-text">
+          En Working Chapultepec encontré más que un espacio para nuestra empresa, he encontrado un espacio cómodo e innovador para el crecimiento de la empresa, así como buenas amistades y alianzas comerciales. Gracias por sus atenciones y su excelente servicio.
         </p>
       </div>
     </div>
