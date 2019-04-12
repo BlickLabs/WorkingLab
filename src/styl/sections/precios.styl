@@ -10,7 +10,7 @@
   center-block()
   display flex
   flex-wrap wrap
-  justify-content space-between
+  justify-content flex-start
   align-items flex-start
   margin-top remify(20)
   max-width 776px
@@ -20,6 +20,13 @@
 .prices__item
   margin-top remify(50)
   width 241px
+
+  &:nth-child(2)
+    margin-left 25px
+    margin-right 25px
+
+  &:nth-child(4)
+    margin-right 25px
 
 .prices__item-icon
   background white
@@ -93,10 +100,17 @@
     vertical-align top
     padding-top remify(3)
 
-@media screen and (max-width: 850px)
+@media screen and (max-width: 875px)
   .prices__items
     max-width 600px
     justify-content center
 
   .prices__item
     flex-basis 100%
+
+    &:nth-child(2)
+      margin-left 0
+      margin-right 0
+
+    &:nth-child(4)
+      margin-right 0

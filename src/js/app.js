@@ -48,7 +48,7 @@
   });
 
   //MOBILE MENU
-    var mobile = window.matchMedia('(max-width: 810px)');
+    var mobile = window.matchMedia('(max-width: 1055px)');
 
     function detectTouch(e) {
       if (!$(e.target).is('nav .menu-trigger') && !$(e.target).is('nav .menu-container') && !$(e.target).closest('nav .menu-container').length && $('nav .menu-container').hasClass('show-menu')) {
