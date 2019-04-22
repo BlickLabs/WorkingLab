@@ -75,7 +75,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.0.7/l10n/es.js"></script>
 
 <header id="homepage-header" class="homepage-hero vertical-center">
-  <video id="video" width="100%"  height="100%" poster="img/backgrounds/hero.jpg" autoplay loop muted>
+  <video id="video" width="100%"  height="100%" poster="img/video/video-home-poster.jpg" autoplay loop muted>
     <source src="img/video/cover-video.mp4" type="video/mp4">
   </video>
   <div class="homepage-hero__video-cover"></div>
@@ -138,23 +138,21 @@
 </section>
 <section>
   <div id="homepage-second-carousel" class="home-second-carousel">
-      <img src="img/carousel/c1.jpg" alt="Imagen de carrusel 1">
-      <img src="img/carousel/c2.jpg" alt="Imagen de carrusel 2">
-      <img src="img/carousel/c3.jpg" alt="Imagen de carrusel 3">
-      <img src="img/carousel/c4.jpg" alt="Imagen de carrusel 4">
-      <img src="img/carousel/c5.jpg" alt="Imagen de carrusel 5">
-      <img src="img/carousel/c6.jpg" alt="Imagen de carrusel 6">
-      <img src="img/carousel/c7.jpg" alt="Imagen de carrusel 7">
-      <img src="img/carousel/c8.jpg" alt="Imagen de carrusel 8">
-      <img src="img/carousel/c9.jpg" alt="Imagen de carrusel 9">
-      <img src="img/carousel/c10.jpg" alt="Imagen de carrusel 10">
-      <img src="img/carousel/c11.jpg" alt="Imagen de carrusel 11">
-      <img src="img/carousel/c12.jpg" alt="Imagen de carrusel 12">
-      <img src="img/carousel/c13.jpg" alt="Imagen de carrusel 13">
-      <img src="img/carousel/c14.jpg" alt="Imagen de carrusel 14">
-      <img src="img/carousel/c15.jpg" alt="Imagen de carrusel 15">
-      <img src="img/carousel/c16.jpg" alt="Imagen de carrusel 16">
-      <img src="img/carousel/c17.jpg" alt="Imagen de carrusel 17">
+      <img src="img/carousel/1.jpg" alt="Imagen de carrusel 1">
+      <img src="img/carousel/2.jpg" alt="Imagen de carrusel 2">
+      <img src="img/carousel/3.jpg" alt="Imagen de carrusel 3">
+      <img src="img/carousel/4.jpg" alt="Imagen de carrusel 4">
+      <img src="img/carousel/5.jpg" alt="Imagen de carrusel 5">
+      <img src="img/carousel/6.jpg" alt="Imagen de carrusel 6">
+      <img src="img/carousel/7.jpg" alt="Imagen de carrusel 7">
+      <img src="img/carousel/8.jpg" alt="Imagen de carrusel 8">
+      <img src="img/carousel/9.jpg" alt="Imagen de carrusel 9">
+      <img src="img/carousel/10.jpg" alt="Imagen de carrusel 10">
+      <img src="img/carousel/11.jpg" alt="Imagen de carrusel 11">
+      <img src="img/carousel/12.jpg" alt="Imagen de carrusel 12">
+      <img src="img/carousel/13.jpg" alt="Imagen de carrusel 13">
+      <img src="img/carousel/14.jpg" alt="Imagen de carrusel 14">
+      <img src="img/carousel/15.jpg" alt="Imagen de carrusel 15">
   </div>
 </section>
 <section class="homepage-locations" id="ubicaciones">
@@ -171,7 +169,7 @@
     <div class="homepage-locations__item">
         <h3 class="homepage-locations__subtitle">working cibeles</h3>
       <img class="homepage-locations__icon" src="img/icons/location.png" alt="Ubicación" />
-      <span class="homepage-locations__item-location">Puebla 237 Col. Roma Norte. Delegación Cuauhtémoc CP. 06700, CDMX.</span>
+      <span class="homepage-locations__item-location">Puebla 237 Col. Roma Norte, CDMX.</span>
       <a href="ubicaciones.html">
         <button type="button" class="site-button">Ver más</button>
       </a>
@@ -185,6 +183,9 @@
       </a>
     </div>
   </div>
+</section>
+<section class="homepage-mapiframe">
+  <iframe src="https://www.google.com/maps/d/embed?mid=1VTU_MSYDZvkTj1jvpahVd-sFCn4WjC-2&hl=es-419" width="640" height="480"></iframe>
 </section>
 <section class="homepage-testimonials">
   <h2 class="homepage-testimonials__title">Testimoniales</h2>
@@ -277,10 +278,18 @@
   <button data-remodal-action="close" type="button" class="remodal-close free-day-modal__close"></button>
   <h2 class="section-title free-day-modal__title">Agenda tu cita y conoce tu próxima oficina</h2>
   <form id="work-with-us-form" class="contact-form appointment-form-modifier" action="http://integrations.blick.mx/workinglabs/appointment/" method="post">
-    <div class="input-wrapper">
-      <div class="material-div">
-        <label class="input-label material-label" for="name-complete">Nombre completo</label>
-        <input id="name-complete" class="site-input material-input" type="text" name="completename" required>
+    <div class="inputs-row">
+      <div class="input-wrapper">
+        <div class="material-div">
+          <label class="input-label material-label" for="name-complete">Nombre completo</label>
+          <input id="name-complete" class="site-input material-input" type="text" name="completename" required>
+        </div>
+      </div>
+      <div class="input-wrapper">
+        <div class="material-div">
+          <label class="input-label material-label" for="email">Correo electrónico</label>
+          <input id="email" class="site-input material-input" type="email" name="email" required>
+        </div>
       </div>
     </div>
     <div class="inputs-row">
