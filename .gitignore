@@ -7,5 +7,5 @@ dist/
 _templates/
 
 .idea/
-
+.DS_Store
 
