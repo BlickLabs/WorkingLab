@@ -1,6 +1,16 @@
 .locations
   margin-bottom 76px
 
+  & .iframeLocations
+    display flex
+    justify-content center
+
+  & .iframeChapultepec
+    margin-top 90px
+
+  & .iframeCibeles
+    margin-top 45px
+
   &-cover
     background-image url("../img/locations/ubicaciones-cover.jpg")
     background-position center
@@ -100,33 +110,28 @@
         &-6
           background-image url("../img/locations/puebla23-6.jpg")
 
-      &.periferico
+      &.colima
         &-1
-          background-image url("../img/locations/peri1.jpg")
+          background-image url("../img/locations/colima1.png")
 
         &-2
-          background-image url("../img/locations/peri2.jpg")
-
-        &-3
-          background-image url("../img/locations/peri3.jpg")
-
-        &-4
-          background-image url("../img/locations/peri4.jpg")
-
-        &-5
-          background-image url("../img/locations/peri5.jpg")
+          background-image url("../img/locations/colima2.png")
 
   &-cibeles
-    margin 157px 0 97px 0
+    margin 97px 0 97px 0
 
-  &-periferico
-    display flex
-    justify-content center
+  // &-periferico
+  //   display flex
+  //   justify-content center
 
   &-cibeles,
   &-periferico
     .locations-pin
       align-items flex-start
+
+  &-colima
+    .locations-carousel-img
+      height 460px
 
 .chapultepec-carousel
   position relative
@@ -171,13 +176,20 @@
 
 @media screen and (max-width 1180px)
   .locations
+    & .iframeLocations > iframe
+      height 450px !important
+      width 80% !important
+
+    & .iframeChapultepec
+      margin-top 359px
+
     &-content
       align-items center
       flex-direction column
       width auto
 
     &-cibeles
-      margin-top 410px
+      margin-top 100px
 
       .locations-content
         flex-direction column-reverse 
@@ -191,6 +203,10 @@
     &-cibeles
       margin-left 3.8vw
       margin-right 3.8vw
+
+    &-colima
+      .locations-carousel-img
+        height 330px
 
     &-carousel
       &-img
